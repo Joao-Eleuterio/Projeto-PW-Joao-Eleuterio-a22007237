@@ -3,13 +3,10 @@ import datetime
 
 from django.db import models
 
-# Create your models here.
-from django.db.models import DO_NOTHING
-
 
 class Post(models.Model):
     autor = models.CharField(max_length=100)
-    data = models.DateTimeField(default=datetime.datetime.now())
+    data = models.DateTimeField(auto_now_add=True)
     titulo = models.CharField(max_length=200)
     descricao = models.CharField(max_length=500)
     link = models.URLField(max_length=200, blank=True)
@@ -85,7 +82,7 @@ class Licenciatura(models.Model):
     ano = models.IntegerField(default=0)
     semestre = models.IntegerField(default=0)
     cadeiras = models.ManyToManyField(Cadeira)
-    formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE)
+    formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE, default=0)
 
     def __str__(self):
         return f"{self.ano} {self.semestre}"
@@ -94,8 +91,7 @@ class Licenciatura(models.Model):
 class Certificado(models.Model):
     nome = models.CharField(max_length=100)
     imagem = models.ImageField(upload_to='media/', null=True)
-    formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE, related_name='portfolio.Certificado.formacao+',
-                                 blank=True)
+    formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE, default=0)
 
     def __str__(self):
         return f"{self.nome}"

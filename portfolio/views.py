@@ -7,6 +7,7 @@ from django.urls import reverse
 from .forms import PostForm, QuizzForm
 from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Pessoa, Noticia, Tecnologias
 from .quizzFunctions import desenha_grafico_resultados
+from django.contrib.auth.decorators import login_required
 
 
 def home_page_view(request):
@@ -79,11 +80,13 @@ def edita_Post_view(request, post_id):
     return render(request, 'portfolio/edita.html', context)
 
 
+@login_required
 def apaga_Post_view(request, post_id):
     Post.objects.get(id=post_id).delete()
     return HttpResponseRedirect(reverse('portfolio:blog'))
 
 
+@login_required
 def sobreOWebsite_page_view(request):
     context = {'tecnologias': Tecnologias.objects.all()}
     return render(request, 'portfolio/sobreOWebsite.html', context)
