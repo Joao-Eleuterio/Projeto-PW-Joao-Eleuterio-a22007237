@@ -1,0 +1,85 @@
+main{background-color:rgb(30, 133, 255);}
+.heroPage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: start;
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/componente1.da72b660e4ae.jpeg");
+
+}
+
+.logo{
+  opacity:0;
+}
+
+
+.FalarSobreMim{height:50vh;}
+.heroPage div>div{background-color:rgb(30, 133, 255, 0.5);width:35%;margin-left:32.5%;
+border-radius:30px;}
+
+.heroPage  div:first-child{
+    position:relative;
+    top:30%;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    font-size:500%;
+    color:white;
+
+}
+
+
+article {
+
+  padding: 0 4vw;
+
+  font-size: 2rem;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/back.e5f1388d1389.jpeg");
+
+  /* Set a specific height */
+  height:20vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.SobreMim,.projetos, .web, .blog, .contacto{
+  /* The image used */
+  background-image: url("../images/black.5403f3806cb1.jpg");
+  height:90vh;
+}
+.SobreMim article ,.projetos article, .web article, .blog article, .contacto article{
+  /* The image used */
+  background-color:red;
+  opacity:50%;
+height:90vh;
+}
+
+
+
+/* fallback */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v7/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOej.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  float:right;
+  font-size:200%;
+}
+
+
+

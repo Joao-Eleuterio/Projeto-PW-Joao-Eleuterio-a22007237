@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 3%;
+    padding-right:3%;
+    height: 10vh;
+    background-image: url("../images/ai_hero.jpg");
+    font-size: 1.2em;
+}
+
+.logo {
+    color: white;
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+
+.btn{
+    background-color:  rgb(30, 133, 255);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .7s;
+}
+
+
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0px;
+    width:100%;
+    height: 1%;
+    background-image: url("../images/ai_hero.jpg");
+    background-size:50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer div{
+    height: 125%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: -0.5%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header{
+    position:sticky;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+nav ul li {
+    list-style-type: none;
+    align:center;
+    padding: 10px 25px;
+    display: inline-block;
+}
+@keyframes my-animation {
+  from {
+    background-color:  black;
+  }
+  to {
+   background-color:  rgb(30, 133, 255);
+   }
+}
+nav ul li:hover {
+  animation-name: my-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  border-radius: 10% 10% 0% 0%;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-tranform: capitalize;
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+}
+
+nav ul li{
+position:relative;
+float:left;
+}
+nav ul li ul li a{
+color:black;
+}
+
+/* aba quando esta selecionado um objeto no menu */
+nav ul li  ul{
+position:absolute;
+top:100%;
+left:0;
+background-color:white;
+display:none;
+
+}
+nav ul li:hover ul{ display:block; }
+nav ul li ul li:hover{
+ background-color:  rgb(30, 133, 255); border-radius:0%;}
+nav ul ul li{
+border:2px solid black;
+border-top:0px;
+width:150px;
+}
+/*-------------------------------------------*/
+
+

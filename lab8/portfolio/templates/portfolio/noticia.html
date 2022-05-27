@@ -1,0 +1,30 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/noticia.css' %}"/>
+
+{% endblock style %}
+{% block main %}<h1 class="Titulo">Noticias</h1>
+<div class="container">
+
+    {%for noticia in noticias %}
+
+    <div class="noticia">
+        <h1>{{noticia.titulo}}</h1>
+        <div style="margin-top:4%;">
+            <img src="{{noticia.imagem.url}}">
+        </div>
+        <div style="margin-left:45%; ">
+            <p>Descrição: {{noticia.descricao}}</p>
+            <br>
+            <br>
+            Link: {{noticia.link}}
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+
+{% endblock main %}

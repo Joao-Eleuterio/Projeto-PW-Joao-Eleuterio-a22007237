@@ -1,0 +1,61 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/sobreOWebsite.css' %}"/>
+
+{% endblock style %}
+{% block main %}
+<h1 class="titulo"> Portfolio João Eleutério </h1><br>
+    <br>
+<div class="container">
+
+    <div id="esteWebSite">
+
+        <h2>Este WebSite</h2><br>
+        <p>Este website foi criado no ambito da cadeira de Programacao web e será utilizado no futuro como meu portfolio
+            pessoal<br><br><br>Escrever aqui</p>
+    </div>
+    <br>
+    <br>
+    <div id="tecnologias">
+        <div>
+            <h2>Tecnologias utilizadas</h2><br>
+            {%for tecnologia in tecnologias %}
+            <div><h2>{{tecnologia.nome}} </h2>
+                <p>{{tecnologia.descricao}}</p>
+            </div>
+            {%endfor%}
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div id="labs">
+        <h2>Laboratórios</h2><br>
+        <p>Estes laboratórios ajudaram muitos na criação deste website<br><br><br>Escrever aqui</p>
+        <form action="https://github.com/Joao-Eleuterio/pw-labs-JoaoEleuterio-a22007237">
+            <button type="submit">Labs</button>
+        </form>
+
+    </div>
+    <div id="diagrama">
+        <h2>Diagrama</h2><br><br><br>
+        {% load static %}
+        <img src="../static/portfolio/images/Diagrama_DER.drawio" alt="" width="100%" height="auto" style="margin-bottom:10%;">
+    </div>
+
+</div>
+<!--
+<p>Tecnologias: Falar das seguintes Tecnologias, com os atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, link para site oficial, descrição das principais características. * Back-end: Laravel, ASP.NET, Spring MVC, Express, Django * Front-end: Angular, React, Vue, Svelte * Outras: WordPress, OutSystems, Weebly, Wix
+Laboratórios: página que lista links para os laboratórios realizados na disciplina de PW, com o título e descrição dos tópicos abordados
+Notícias: listagem de 10 noticias sobre artigos do medium.com que tenha gostado, com campos: título, 3 linhas de texto, imagem e link
+exemplos de técnicas e efeitos que gosta, sites que gosta e de sites que acha maus, tendencias modernas de programação Web, aspectos obsoletos</p><br>
+<p>lista de tecnologias usadas na criação do website: HTML, CSS, Python, Django, Heroku, JavaScript). Tecnologia terá os seguintes atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, imagem exemplificativa (excerto de código, e.g.) link para site oficial, descrição do que é e onde & como foi usado.
+lista de padrões usados: padrão arquitetural cliente-servidor HTTP, padrão de software MVC, padrão de comunicação assíncrona (AJAX)</p>
+
+-->
+
+
+{% endblock main %}

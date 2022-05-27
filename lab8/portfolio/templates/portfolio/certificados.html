@@ -1,0 +1,30 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/certificados.css' %}"/>
+
+{% endblock style %}
+
+
+{% block main %}<h1 class="titulo">Certificado</h1>
+     <br>
+    <br>
+<div class="container">
+
+
+    {%for cert in certificado %}
+    <div>
+        {%if cert.formacao.sigla == '.' %}
+        <h1>{{cert.nome}}</h1>
+        {%else%}
+        <h1>Certificado <a href="formacao#{{cert.formacao.sigla}}">{{cert.formacao.sigla}}</a></h1>
+        {%endif%}
+        <img src="{{cert.imagem.url}}">
+    </div>
+    {%endfor%}
+
+</div>
+
+{% endblock main %}

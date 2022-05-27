@@ -1,0 +1,27 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/formacao.css' %}"/>
+
+{% endblock style %}
+{% block main %}
+<h1 class="titulo">Formação</h1>
+    <br>
+    <br>
+<div class="container">
+
+
+        {%for form in escolas %}
+        {%if form.nome_escola != '.' %}
+        <div id="{{form.sigla}}">
+            <a href="{{form.link_escola}}"><h1>{{form.sigla}}</h1></a>
+            <h3>{{form.nome_escola}}</h3><br>
+            <p>Curso: {{form.curso}}</p><br>
+            <p>{{form.descricao}}</p>
+        </div>
+    {%endif%}
+    {%endfor%}
+</div>
+{% endblock main %}

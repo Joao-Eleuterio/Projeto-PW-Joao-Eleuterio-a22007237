@@ -1,0 +1,45 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/blog.css' %}"/>
+
+{% endblock style %}
+
+
+{% block main %}
+
+<h1 class="titulo">Blog</h1>
+    <br>
+    <br>
+<div class="btnNovaTarefa"><a href="{% url 'portfolio:nova' %}" class="btn btn-success btn-block">+ Nova Tarefa</a></div>
+<br><br>
+{% for posts in post %}
+<div class="container">
+    <div>
+        <div class="post">
+
+
+                <p>{{posts.titulo}}</p>
+
+                <p>{{posts.descricao}}</p>
+
+                <br>
+                {% if posts.link %}
+                    <p>Link: <a href="{{posts.link}}">{{posts.link}}</a></p>
+                {% endif %}
+                <span>By:{{posts.autor}}<br>         Data: {{posts.data}}</span>
+
+
+
+        </div>
+        <div><a href="{% url 'portfolio:edita' posts.id %}" class="btnEditar">Editar</a><br><br>
+            <a href="{% url 'portfolio:apaga' posts.id %}" role="button" class="btnApagar">Apagar</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

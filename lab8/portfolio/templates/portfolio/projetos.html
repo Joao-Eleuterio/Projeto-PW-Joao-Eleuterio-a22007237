@@ -1,0 +1,73 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/projeto.css' %}"/>
+
+{% endblock style %}
+{% block main %}
+<h1 class="titulo">Projetos</h1>
+    <br>
+    <br>
+<div class="aba">
+
+
+
+    {%for projeto in projetos%}
+    {% if projeto.nome_do_projeto != '.' %}
+
+    <div>
+        <a class="modal-open" href="#modal{{projeto.nome_do_projeto}}">
+            <div><img src="{{projeto.imagem.url}}" alt=""></div>
+            <div><h3>{{projeto.nome_do_projeto}}</h3><p>{{projeto.ano_realizacao}}  {% if projeto.linguagens != '' %}|{{projeto.linguagens}}{%endif%}</p></div>
+        </a>
+        <div class="modal" id="modal{{projeto.nome_do_projeto}}">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>{{projeto.nome_do_projeto}}</h3>
+                <div class="modal-area1">
+
+                    <div class="foto">
+                        <a>
+                            <img src="{{projeto.imagemGrande.url}}" alt="">
+                            <img src="{{projeto.gif.url}}" alt="">
+                        </a>
+                    </div>
+                    <p class="descricao"> {{projeto.descricao}} </p>
+                    {% if projeto.cadeira != "." %}
+                    <p class="cadeira"> Cadeira:<a href="licenciatura#{{projeto.cadeira}}"> {{projeto.cadeira}} </a></p>
+                    {%endif%}
+
+                    <p class="git"><a  href="{{projeto.link_github}}">Github do projeto</a></p>
+                   <p  class="participante"> Participantes: {% for participante in projeto.participantes.all %}
+                        {%if participante.nome == 'Sozinho' %}
+                                João Eleutério
+                        {%else%}
+                       , {{participante.nome}}
+                        {%endif%}
+                       {%endfor%}</p>
+                    {% if projeto.linguagens != '' %}
+                    <p class="linguagens">Linguagens Usadas: {{projeto.linguagens}}</p>
+                    {%endif%}
+
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endif%}
+
+
+    {%endfor%}
+
+</div>
+
+
+<!--   titulo, descrição até 500 caracteres, imagem, ano de realização,
+cadeira(classe Cadeira, caso tenha sido projeto associado a uma cadeira)
+participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin,
+e link para a aplicação portfolio do projeto PW),
+link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia) -->
+
+{% endblock main %}

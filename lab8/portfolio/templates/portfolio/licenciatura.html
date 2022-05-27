@@ -1,0 +1,61 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/licenciatura.css' %}"/>
+
+{% endblock style %}
+
+
+{% block main %} <h1 class="titulo">Licenciatura</h1>
+    <br>
+    <br>
+<div class="container">
+
+    {%for licenciaturas in licenciatura %}
+    {%if licenciaturas.semestre == 1 %}
+    <h1 class="ano">{{licenciaturas.ano}}º ano</h1>
+    {%endif%}
+    <div id="11">
+        <h1 class="semestre">{{licenciaturas.semestre}}º semestre</h1>
+
+        {% for cadeira in licenciaturas.cadeiras.all %}
+        <div id="{{cadeira.nome_cadeira}}"><h2>{{cadeira.nome_cadeira}}</h2>
+            <h5>{{cadeira.ects}} ects | {{cadeira.ano_realizado}} </h5>
+            <h4>Ranking:{% for i in data %}
+                {% if cadeira.ranking >= i %}
+                ★
+                {% else %}
+                ☆
+                {%endif%}
+                {%endfor%}</h4>
+            <details>
+                <summary>Professores</summary>
+                {% for professores in cadeira.professores.all %}
+                <details>
+                    <summary>{{professores.nome}}</summary>
+                    {%if professores.link_lusofona != '' %}
+                    <a href="{{professores.link_lusofona}}">Pagina Lusofona</a><br>
+                    {%endif%}
+                    {%if professores.link_linkedin != '' %}
+                    <a href="{{professores.link_linkedin}}">LinkedIn</a>
+                    {%endif%}
+                </details>
+                {%endfor%}
+            </details>
+            {%if cadeira.projeto.nome_do_projeto != '.' %}
+            <details>
+                <summary>Projetos</summary>
+                <a href="projetos#modal{{cadeiras.projeto.nome_do_projeto}}">{{cadeira.projeto.nome_do_projeto}}</a></details>
+            {%endif%}
+            <a href="{{cadeira.link_Lusofona}}">Lusofona</a>
+        </div>
+        {%endfor%}
+    </div>
+
+
+
+    {%endfor%}
+</div>
+    {% endblock main %}
