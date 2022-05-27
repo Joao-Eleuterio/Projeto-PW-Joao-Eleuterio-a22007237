@@ -1,5 +1,4 @@
-from .models import Quizz
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 
 def informacao_sobre_utilizadores(objetos):
@@ -13,6 +12,7 @@ def informacao_sobre_utilizadores(objetos):
 def desenha_grafico_resultados(objetos):
     # creating the dataset
     dados = informacao_sobre_utilizadores(objetos)
+    dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
     pessoas = list(dados.keys())
     pontuacoes = list(dados.values())
