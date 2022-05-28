@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'portfolio',
+
 ]
 
 MIDDLEWARE = [
@@ -118,18 +119,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 
-STATIC_URL = '/portfolio/static/'    # substitua nome_aplicacao pelo nome da sua aplicação
-
+STATIC_URL = '/portfolio/static/'  # substitua nome_aplicacao pelo nome da sua aplicação
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Necessario para as imagens
-MEDIA_URL = '/portfolio/'
+MEDIA_URL = '/portfolio/'  # or any prefix you choose
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+MEDIA_URL = "/media/"
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': "joaoeleuterio",
     'API_KEY': "222161335646556",
@@ -138,4 +139,3 @@ CLOUDINARY_STORAGE = {
 
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # novo
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # novo

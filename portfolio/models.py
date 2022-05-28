@@ -3,6 +3,8 @@ import datetime
 
 from django.db import models
 
+from portfolio.views import resolution_path
+
 
 class Post(models.Model):
     autor = models.CharField(max_length=100)
@@ -101,7 +103,7 @@ class Noticia(models.Model):
     titulo = models.CharField(max_length=100)
     descricao = models.CharField(max_length=500)
     link = models.URLField(max_length=200, blank=True)
-    imagem = models.ImageField(upload_to='media/', null=True)
+    imagem = models.ImageField(upload_to=resolution_path)
 
     def __str__(self):
         return f"{self.titulo}"
