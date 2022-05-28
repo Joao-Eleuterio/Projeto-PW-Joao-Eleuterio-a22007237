@@ -87,7 +87,8 @@ def apaga_Post_view(request, post_id):
 
 
 def sobreWebsite_page_view(request):
-    return render(request, 'portfolio/sobreWebsite.html')
+    context = {'tecnologias': Tecnologias.objects.all()}
+    return render(request, 'portfolio/sobreWebsite.html', context)
 
 
 def noticia_page_view(request):
