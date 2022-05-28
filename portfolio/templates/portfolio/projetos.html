@@ -12,8 +12,6 @@
 <div class="aba">
 
 
-
-
     {%for projeto in projetos%}
     {% if projeto.nome_do_projeto != '.' %}
 
@@ -32,9 +30,9 @@
 
                     <div class="foto">
                         <a>
-                            {% load cloudinary_static  %}
-                            {% cloudinary_static projeto.imagemGrande.name width=100 height=100 %}
-                            {% cloudinary_static projeto.gif.name width=100 height=100 %}
+                            {% load cloudinary %}
+                            {% cloudinary projeto.imagemGrande.name width=100 height=100 %}
+                            {% cloudinary projeto.gif.name width=100 height=100 %}
                         </a>
                     </div>
                     <p class="descricao"> {{projeto.descricao}} </p>

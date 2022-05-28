@@ -6,7 +6,11 @@
 <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/noticia.css' %}"/>
 
 {% endblock style %}
-{% block main %}<h1 class="Titulo">Noticias</h1>
+{% block main %}
+ <form method = "post" enctype="multipart/form-data">
+
+
+<h1 class="Titulo">Noticias</h1>
 <br>
 <br>
     {% if request.user.is_authenticated %}
@@ -31,5 +35,5 @@
     {%endfor%}
 </div>
 
-
+ </form>
 {% endblock main %}
