@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="portfolio.post" pk="20">
+    <field name="autor" type="CharField">2022-05-22 10:30:54.765366+00:00</field>
+    <field name="data" type="DateTimeField">2022-05-20T16:22:42+00:00</field>
+    <field name="titulo" type="CharField">Título</field>
+    <field name="descricao" type="CharField">Isto foi editado</field>
+    <field name="link" type="CharField"></field>
+  </object>
+  <object model="portfolio.post" pk="26">
+    <field name="autor" type="CharField">João Eleutério</field>
+    <field name="data" type="DateTimeField">2022-05-26T08:37:49+00:00</field>
+    <field name="titulo" type="CharField">Fazer lab8</field>
+    <field name="descricao" type="CharField">O lab8 consiste em estruturar o portfolio</field>
+    <field name="link" type="CharField">https://github.com/ULHT-PW/pw-lab8</field>
+  </object>
+  <object model="portfolio.post" pk="27">
+    <field name="autor" type="CharField">João Eleutério</field>
+    <field name="data" type="DateTimeField">2022-05-26T08:37:49+00:00</field>
+    <field name="titulo" type="CharField">Fazer lab9</field>
+    <field name="descricao" type="CharField">O lab9 consiste em utilizar django no portfolio</field>
+    <field name="link" type="CharField">https://github.com/ULHT-PW/pw-lab9</field>
+  </object>
+  <object model="portfolio.post" pk="28">
+    <field name="autor" type="CharField">João Eleutério</field>
+    <field name="data" type="DateTimeField">2022-05-26T08:37:49+00:00</field>
+    <field name="titulo" type="CharField">Fazer lab10</field>
+    <field name="descricao" type="CharField">O lab10 consiste em fazer um login no portfolio</field>
+    <field name="link" type="CharField">https://github.com/ULHT-PW/pw-lab10</field>
+  </object>
+  <object model="portfolio.post" pk="29">
+    <field name="autor" type="CharField">João Eleutério</field>
+    <field name="data" type="DateTimeField">2022-05-28T19:20:00.935652+00:00</field>
+    <field name="titulo" type="CharField">Nova Post</field>
+    <field name="descricao" type="CharField">Criado pelo Form</field>
+    <field name="link" type="CharField">https://www.google.com/</field>
+  </object>
+  <object model="portfolio.post" pk="30">
+    <field name="autor" type="CharField">Autor</field>
+    <field name="data" type="DateTimeField">2022-05-28T19:24:43.466779+00:00</field>
+    <field name="titulo" type="CharField">HAHAHAHAHAHA</field>
+    <field name="descricao" type="CharField">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</field>
+    <field name="link" type="CharField">http://127.0.0.1:8000/edita/20</field>
+  </object>
+  <object model="portfolio.quizz" pk="1">
+    <field name="nome" type="CharField">Lis</field>
+    <field name="pergunta1" type="CharField">1950</field>
+    <field name="pergunta2" type="CharField">1955</field>
+    <field name="pergunta3" type="IntegerField">1975</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="2">
+    <field name="nome" type="CharField">Lisboa</field>
+    <field name="pergunta1" type="CharField">1991</field>
+    <field name="pergunta2" type="CharField">1994</field>
+    <field name="pergunta3" type="IntegerField">1989</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="3">
+    <field name="nome" type="CharField">aaaa</field>
+    <field name="pergunta1" type="CharField">12321</field>
+    <field name="pergunta2" type="CharField">1231231</field>
+    <field name="pergunta3" type="IntegerField">1998</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="4">
+    <field name="nome" type="CharField">asds</field>
+    <field name="pergunta1" type="CharField">2132</field>
+    <field name="pergunta2" type="CharField">12321</field>
+    <field name="pergunta3" type="IntegerField">1989</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="5">
+    <field name="nome" type="CharField">João</field>
+    <field name="pergunta1" type="CharField">1991</field>
+    <field name="pergunta2" type="CharField">1994</field>
+    <field name="pergunta3" type="IntegerField">1989</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="6">
+    <field name="nome" type="CharField">João</field>
+    <field name="pergunta1" type="CharField">1991</field>
+    <field name="pergunta2" type="CharField">1994</field>
+    <field name="pergunta3" type="IntegerField">1989</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="7">
+    <field name="nome" type="CharField">Lisboa</field>
+    <field name="pergunta1" type="CharField">1991</field>
+    <field name="pergunta2" type="CharField">1994</field>
+    <field name="pergunta3" type="IntegerField">1989</field>
+    <field name="pergunta4" type="IntegerField">framework</field>
+    <field name="pergunta5" type="CharField">2005</field>
+  </object>
+  <object model="portfolio.quizz" pk="8">
+    <field name="nome" type="CharField">João</field>
+    <field name="pergunta1" type="CharField">lins</field>
+    <field name="pergunta2" type="CharField">framework</field>
+    <field name="pergunta3" type="IntegerField">2005</field>
+    <field name="pergunta4" type="IntegerField">1994</field>
+    <field name="pergunta5" type="CharField">nao sei</field>
+  </object>
+  <object model="portfolio.quizz" pk="9">
+    <field name="nome" type="CharField">João Pedro</field>
+    <field name="pergunta1" type="CharField">linguagem de marcação</field>
+    <field name="pergunta2" type="CharField">framework</field>
+    <field name="pergunta3" type="IntegerField">2005</field>
+    <field name="pergunta4" type="IntegerField">1994</field>
+    <field name="pergunta5" type="CharField">cascading style sheet</field>
+  </object>
+  <object model="portfolio.quizz" pk="10">
+    <field name="nome" type="CharField">Ricardo</field>
+    <field name="pergunta1" type="CharField">a</field>
+    <field name="pergunta2" type="CharField">a</field>
+    <field name="pergunta3" type="IntegerField">1</field>
+    <field name="pergunta4" type="IntegerField">1</field>
+    <field name="pergunta5" type="CharField">a</field>
+  </object>
+  <object model="portfolio.quizz" pk="11">
+    <field name="nome" type="CharField">Marco</field>
+    <field name="pergunta1" type="CharField">linguagem de marcação</field>
+    <field name="pergunta2" type="CharField">framework</field>
+    <field name="pergunta3" type="IntegerField">2005</field>
+    <field name="pergunta4" type="IntegerField">1991</field>
+    <field name="pergunta5" type="CharField">cascading style sheet</field>
+  </object>
+  <object model="portfolio.quizz" pk="12">
+    <field name="nome" type="CharField">Mario</field>
+    <field name="pergunta1" type="CharField">21</field>
+    <field name="pergunta2" type="CharField">framework</field>
+    <field name="pergunta3" type="IntegerField">2005</field>
+    <field name="pergunta4" type="IntegerField">12312</field>
+    <field name="pergunta5" type="CharField">cascading style sheet</field>
+  </object>
+  <object model="portfolio.pessoa" pk="1">
+    <field name="nome" type="CharField">Cristiane Ferreira Nunes</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/cristiane-da-silva-ferreira-nunes</field>
+  </object>
+  <object model="portfolio.pessoa" pk="2">
+    <field name="nome" type="CharField">Cristina Ribeiro Guerra</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/cristina-maria-ribeiro-guerra</field>
+  </object>
+  <object model="portfolio.pessoa" pk="3">
+    <field name="nome" type="CharField">Pedro Alves</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/palves/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/pedro-hugo-de-queiros-alves</field>
+  </object>
+  <object model="portfolio.pessoa" pk="4">
+    <field name="nome" type="CharField">Bruno Saraiva</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/bdsaraiva/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/bruno-david-ferreira-saraiva</field>
+  </object>
+  <object model="portfolio.pessoa" pk="5">
+    <field name="nome" type="CharField">Teresa Almada</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/teresa-almada-90113bb3/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/teresa-maria-catanho-da-silva-almada</field>
+  </object>
+  <object model="portfolio.pessoa" pk="6">
+    <field name="nome" type="CharField">Aleksandar mikovic</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/aleksandar-mikovic-4a76b263/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/aleksandar-mikovic</field>
+  </object>
+  <object model="portfolio.pessoa" pk="7">
+    <field name="nome" type="CharField">Andre Da Fonseca</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/andre-vieira-vassalo-da-fonseca</field>
+  </object>
+  <object model="portfolio.pessoa" pk="8">
+    <field name="nome" type="CharField">Maria Silva Fino</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/maria-helena-silva-fino</field>
+  </object>
+  <object model="portfolio.pessoa" pk="9">
+    <field name="nome" type="CharField">João Matos Carvalho</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/jplcarvalho/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/joao-pedro-leal-abalada-de-matos-carvalho</field>
+  </object>
+  <object model="portfolio.pessoa" pk="10">
+    <field name="nome" type="CharField">Rodrigo Correia</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/rodrigo-coutinho-correia</field>
+  </object>
+  <object model="portfolio.pessoa" pk="11">
+    <field name="nome" type="CharField">Sergio Mestre Ferreira</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/sergio-pedro-mestre-ferreira</field>
+  </object>
+  <object model="portfolio.pessoa" pk="12">
+    <field name="nome" type="CharField">Diogo Gil Morais</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/diogogilmorais1980/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/diogo-soares-pereira-gil-morais</field>
+  </object>
+  <object model="portfolio.pessoa" pk="13">
+    <field name="nome" type="CharField">Manuel Costa Leite</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/manuel-da-costa-leite</field>
+  </object>
+  <object model="portfolio.pessoa" pk="14">
+    <field name="nome" type="CharField">Pedro Arroz Serra</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/pedroarroz/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/pedro-arroz-correia-bonifacio-serra</field>
+  </object>
+  <object model="portfolio.pessoa" pk="15">
+    <field name="nome" type="CharField">Andrea Costigliola</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/acostigliola/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/andrea-costigliola</field>
+  </object>
+  <object model="portfolio.pessoa" pk="16">
+    <field name="nome" type="CharField">Rui Ribeiro</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/ruipedronobreribeiro/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/rui-pedro-nobre-ribeiro</field>
+  </object>
+  <object model="portfolio.pessoa" pk="17">
+    <field name="nome" type="CharField">José Aser</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/joseaser/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/jose-aser-castillo-lorenzo</field>
+  </object>
+  <object model="portfolio.pessoa" pk="18">
+    <field name="nome" type="CharField">Lucio Studer</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/luciostuderferreira/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/lucio-miguel-studer-ferreira</field>
+  </object>
+  <object model="portfolio.pessoa" pk="19">
+    <field name="nome" type="CharField">João Canto</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/jo%C3%A3o-canto-85330440/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/joao-carlos-roquete-fidalgo-canto</field>
+  </object>
+  <object model="portfolio.pessoa" pk="20">
+    <field name="nome" type="CharField">Slavisa Tomic</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/slavisa-tomic-b886b066/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/slavisa-tomic</field>
+  </object>
+  <object model="portfolio.pessoa" pk="21">
+    <field name="nome" type="CharField">Naercio Magaia</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/naerciomagaia/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/naercio-david-pedro-magaia</field>
+  </object>
+  <object model="portfolio.pessoa" pk="22">
+    <field name="nome" type="CharField">Sérgio Nunes</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/sergiornunes/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/sergio-rodrigues-nunes</field>
+  </object>
+  <object model="portfolio.pessoa" pk="23">
+    <field name="nome" type="CharField">Luis Gomes</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/lu%C3%ADs-alexandre-gomes-a778757/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/luis-alexandre-ferreira-de-oliveira-gomes</field>
+  </object>
+  <object model="portfolio.pessoa" pk="24">
+    <field name="nome" type="CharField">Pedro Perdigão</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/pedroalmeidaperdigao/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/pedro-de-almeida-perdigao</field>
+  </object>
+  <object model="portfolio.pessoa" pk="25">
+    <field name="nome" type="CharField">Liliana Carvalho</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/liliana-inocencio-carvalho-phdstudent/</field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="26">
+    <field name="nome" type="CharField">João Licínio</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/joao-licinio-cabral-da-silva</field>
+  </object>
+  <object model="portfolio.pessoa" pk="30">
+    <field name="nome" type="CharField">Sozinho</field>
+    <field name="link_linkedin" type="CharField"></field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="31">
+    <field name="nome" type="CharField">Mário Silva</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/m%C3%A1rio-j-malta-silva-6b6225207/</field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="32">
+    <field name="nome" type="CharField">Alexandre Costa</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/alexandre-costa-b63347209/</field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="33">
+    <field name="nome" type="CharField">Ricardo Cleto</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/ricardo-cleto-8114b5208/</field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="34">
+    <field name="nome" type="CharField">José Sobral</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/jos%C3%A9-sobral-26621720b/</field>
+    <field name="link_lusofona" type="CharField"></field>
+  </object>
+  <object model="portfolio.pessoa" pk="35">
+    <field name="nome" type="CharField">Sergio Nunes</field>
+    <field name="link_linkedin" type="CharField">https://www.linkedin.com/in/sergiornunes/</field>
+    <field name="link_lusofona" type="CharField">https://www.ulusofona.pt/docentes/sergio-rodrigues-nunes</field>
+  </object>
+  <object model="portfolio.projetos" pk="10">
+    <field name="nome_do_projeto" type="CharField">Fisica catapulta com coordenadas</field>
+    <field name="imagem" type="FileField">media/GraficoFisica.png</field>
+    <field name="imagemGrande" type="FileField">media/GraficoFisica_Grande_jkLK5AP.png</field>
+    <field name="gif" type="FileField">media/graficoFisica_Nln9sfc.gif</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Fundamentos de Física</field>
+    <field name="ano_realizacao" type="IntegerField">2020</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/Fisica-Catapulta-com-coords</field>
+    <field name="linguagens" type="CharField">Kotlin</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="11">
+    <field name="nome_do_projeto" type="CharField">Xadrez</field>
+    <field name="imagem" type="FileField">media/Xadrez_zRWo0W3.png</field>
+    <field name="imagemGrande" type="FileField">media/Xadrez_Grande.png</field>
+    <field name="gif" type="FileField">media/grafico_final_LdBLiNL.png</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Fundamentos de Programação</field>
+    <field name="ano_realizacao" type="IntegerField">2020</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/Xadrez</field>
+    <field name="linguagens" type="CharField">Kotlin</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="12">
+    <field name="nome_do_projeto" type="CharField">Leitor de Músicas</field>
+    <field name="imagem" type="FileField">media/deisi_R0Pp4kk.png</field>
+    <field name="imagemGrande" type="FileField">media/grafico_final_OOg5mKC.png</field>
+    <field name="gif" type="FileField">media/giphy_F8nbWde.gif</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Algoritmia de Estrutura de Dados</field>
+    <field name="ano_realizacao" type="IntegerField">2020</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/Leitor-de-Musica</field>
+    <field name="linguagens" type="CharField">Java</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object><object pk="32"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="13">
+    <field name="nome_do_projeto" type="CharField">DeisiGreatGame</field>
+    <field name="imagem" type="FileField">media/deisi_7dhAY4g.png</field>
+    <field name="imagemGrande" type="FileField">media/deisi_Grande.png</field>
+    <field name="gif" type="FileField">media/graficoFisica_42cJjLc.gif</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Linguagens de Programação II</field>
+    <field name="ano_realizacao" type="IntegerField">2021</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/LP2---22007237-22007457-deisiGreatGame</field>
+    <field name="linguagens" type="CharField">Java, Kotlin</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object><object pk="31"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="14">
+    <field name="nome_do_projeto" type="CharField">HotMaze</field>
+    <field name="imagem" type="FileField">media/HotMaze.png</field>
+    <field name="imagemGrande" type="FileField">media/HotMaze_Grande.png</field>
+    <field name="gif" type="FileField">media/grafico_final_CuGVPxI.png</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">.</field>
+    <field name="ano_realizacao" type="IntegerField">2020</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/HotMaze</field>
+    <field name="linguagens" type="CharField">C#</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="15">
+    <field name="nome_do_projeto" type="CharField">Rega</field>
+    <field name="imagem" type="FileField">media/deisi_QJiiiIc.png</field>
+    <field name="imagemGrande" type="FileField">media/grafico_final_4kVUVi5.png</field>
+    <field name="gif" type="FileField">media/grafico_final_uYwb8CT.png</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Arquitetura de Computadores</field>
+    <field name="ano_realizacao" type="IntegerField">2021</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/Rega</field>
+    <field name="linguagens" type="CharField">Assembly</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object><object pk="32"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="16">
+    <field name="nome_do_projeto" type="CharField">bombroad</field>
+    <field name="imagem" type="FileField">media/deisi_VAo27lf.png</field>
+    <field name="imagemGrande" type="FileField">media/grafico_final_AI6xE7a.png</field>
+    <field name="gif" type="FileField">media/graficoFisica_uRud1ek.gif</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Linguagens de Programação I</field>
+    <field name="ano_realizacao" type="IntegerField">2021</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/bombroad</field>
+    <field name="linguagens" type="CharField">C</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="17">
+    <field name="nome_do_projeto" type="CharField">.</field>
+    <field name="imagem" type="FileField">media/deisi_0jXcIiJ.png</field>
+    <field name="imagemGrande" type="FileField">media/codigo4.jpg</field>
+    <field name="gif" type="FileField">media/componente1.jpeg</field>
+    <field name="descricao" type="CharField">.</field>
+    <field name="cadeira" type="CharField">.</field>
+    <field name="ano_realizacao" type="IntegerField">1</field>
+    <field name="link_github" type="CharField"></field>
+    <field name="linguagens" type="CharField"></field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="19">
+    <field name="nome_do_projeto" type="CharField">Carro</field>
+    <field name="imagem" type="FileField">media/Carro.png</field>
+    <field name="imagemGrande" type="FileField">media/Carro_Grande.png</field>
+    <field name="gif" type="FileField">media/componente1_rQubP3D.jpeg</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Arquitetura Avançada de Computadores</field>
+    <field name="ano_realizacao" type="IntegerField">2021</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/CarroLogisim</field>
+    <field name="linguagens" type="CharField">C</field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object><object pk="32"></object><object pk="33"></object><object pk="34"></object></field>
+  </object>
+  <object model="portfolio.projetos" pk="21">
+    <field name="nome_do_projeto" type="CharField">Sinais</field>
+    <field name="imagem" type="FileField">media/deisi.png</field>
+    <field name="imagemGrande" type="FileField">media/grafico_4Sj0kqI.png</field>
+    <field name="gif" type="FileField">media/grafico_final_95WvunJ.png</field>
+    <field name="descricao" type="CharField">Uma catapulta que lança pedras, é utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estratégico situado à distância horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cenário.</field>
+    <field name="cadeira" type="CharField">Sinais e Sistemas</field>
+    <field name="ano_realizacao" type="IntegerField">2021</field>
+    <field name="link_github" type="CharField">https://github.com/Joao-Eleuterio/ProjetoSinais</field>
+    <field name="linguagens" type="CharField"></field>
+    <field name="projetoDownload" type="FileField"></field>
+    <field name="participantes" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object><object pk="32"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="1">
+    <field name="nome_cadeira" type="CharField">Fundamentos de Física</field>
+    <field name="ano_realizado" type="IntegerField">2020</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">0</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">10</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/fundamentos-de-fisica/ULHT260-7336</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="1"></object><object pk="2"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="2">
+    <field name="nome_cadeira" type="CharField">Fundamentos de Programação</field>
+    <field name="ano_realizado" type="IntegerField">2020</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">1</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">11</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/fundamentos-de-programacao/ULHT260-7337</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="3"></object><object pk="4"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="3">
+    <field name="nome_cadeira" type="CharField">Matemática Discreta</field>
+    <field name="ano_realizado" type="IntegerField">2020</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">3</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-discreta/ULHT260-1656</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="5"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="4">
+    <field name="nome_cadeira" type="CharField">Matemática I</field>
+    <field name="ano_realizado" type="IntegerField">2020</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">5</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-i/ULHT260-1</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="6"></object><object pk="7"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="5">
+    <field name="nome_cadeira" type="CharField">Sistemas Digitais</field>
+    <field name="ano_realizado" type="IntegerField">2020</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-digitais/ULHT260-7</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="8"></object><object pk="9"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="6">
+    <field name="nome_cadeira" type="CharField">Álgebra Linear</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/algebra-linear/ULHT260-2091</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="5"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="7">
+    <field name="nome_cadeira" type="CharField">Algoritmia e Estrutura de Dados</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">12</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/algoritmia-e-estruturas-de-dados/ULHT260-13397</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="3"></object><object pk="10"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="8">
+    <field name="nome_cadeira" type="CharField">Arquitetura de Computadores</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">15</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/arquitetura-de-computadores/ULHT260-5857</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="11"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="9">
+    <field name="nome_cadeira" type="CharField">Competência Comportamentais</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">4</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/competencias-comportamentais/ULHT260-17267</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="12"></object><object pk="13"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="10">
+    <field name="nome_cadeira" type="CharField">Linguagens de Programação I</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">16</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/linguagens-de-programacao-i/ULHT260-498</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="14"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="12">
+    <field name="nome_cadeira" type="CharField">Matemática II</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-ii/ULHT260-505</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="6"></object><object pk="7"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="13">
+    <field name="nome_cadeira" type="CharField">Arquitetura Avançada de Computadores</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">19</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/arquiteturas-avancadas-de-computadores/ULHT260-13398</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="14"></object><object pk="15"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="15">
+    <field name="nome_cadeira" type="CharField">Linguagens de Programação II</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">13</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/linguagens-de-programacao-ii/ULHT260-898</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="3"></object><object pk="18"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="16">
+    <field name="nome_cadeira" type="CharField">Sinais e Sistemas</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">21</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sinais-e-sistemas/ULHT260-7339</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="19"></object><object pk="20"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="17">
+    <field name="nome_cadeira" type="CharField">Sistemas Operativos</field>
+    <field name="ano_realizado" type="IntegerField">2021</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-operativos/ULHT260-6305</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="21"></object><object pk="35"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="18">
+    <field name="nome_cadeira" type="CharField">Computação Gráfica</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-grafica/ULHT260-2267</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="9"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="19">
+    <field name="nome_cadeira" type="CharField">Engenharia de Requisitos e Testes</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/engenharia-de-requisitos-e-testes/ULHT260-22512</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="16"></object><object pk="23"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="20">
+    <field name="nome_cadeira" type="CharField">Programação Web</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/programacao-web/ULHT260-11195</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="18"></object><object pk="24"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="21">
+    <field name="nome_cadeira" type="CharField">Redes de Computadores</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/redes-de-computadores/ULHT260-1793</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="25"></object><object pk="35"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="22">
+    <field name="nome_cadeira" type="CharField">Sistemas de Suporte à Decisão</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">6</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-de-suporte-a-decisao/ULHT260-7303</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="16"></object><object pk="26"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="23">
+    <field name="nome_cadeira" type="CharField">Trabalho Final de Curso</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">20</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/trabalho-final-de-curso/ULHT260-5140</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="24">
+    <field name="nome_cadeira" type="CharField">Computação Distribuída</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-distribuida/ULHT260-7348</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="25">
+    <field name="nome_cadeira" type="CharField">Engenharia de Software</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/engenharia-de-software/ULHT260-7341</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="26">
+    <field name="nome_cadeira" type="CharField">Interação Humano-Máquina</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/interacao-humano-maquina/ULHT260-11047</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="27">
+    <field name="nome_cadeira" type="CharField">Trabalho Final de Curso(Cont.)</field>
+    <field name="ano_realizado" type="IntegerField">2023</field>
+    <field name="ects" type="IntegerField">20</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/trabalho-final-de-curso/ULHT260-5140</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="28">
+    <field name="nome_cadeira" type="CharField">Computação Móvel</field>
+    <field name="ano_realizado" type="IntegerField">2023</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-movel/ULHT260-16925</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="29">
+    <field name="nome_cadeira" type="CharField">Segurança Informática</field>
+    <field name="ano_realizado" type="IntegerField">2023</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/seguranca-informatica/ULHT260-11194</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="30">
+    <field name="nome_cadeira" type="CharField">Sistemas de Informação na Nuvem</field>
+    <field name="ano_realizado" type="IntegerField">2023</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-de-informacao-na-nuvem/ULHT260-22514</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="31">
+    <field name="nome_cadeira" type="CharField">Data Science</field>
+    <field name="ano_realizado" type="IntegerField">2022</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">4</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/data-science/ULHT260-22513</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.cadeira" pk="32">
+    <field name="nome_cadeira" type="CharField">Inteligência Artificial</field>
+    <field name="ano_realizado" type="IntegerField">2023</field>
+    <field name="ects" type="IntegerField">5</field>
+    <field name="ranking" type="IntegerField">5</field>
+    <field name="projeto" rel="ManyToOneRel" to="portfolio.projetos">17</field>
+    <field name="link_Lusofona" type="CharField">https://www.ulusofona.pt/licenciaturas/engenharia-informatica/inteligencia-artificial/ULHT260-2129</field>
+    <field name="professores" rel="ManyToManyRel" to="portfolio.pessoa"><object pk="30"></object></field>
+  </object>
+  <object model="portfolio.formacao" pk="1">
+    <field name="sigla" type="CharField">INETE</field>
+    <field name="nome_escola" type="CharField">Instituto De Educação Tecnica</field>
+    <field name="link_escola" type="CharField">https://www.inete.pt/</field>
+    <field name="curso" type="CharField">TÉCNICO DE GESTÃO E PROGRAMAÇÃO DE SISTEMAS INFORMÁTICOS</field>
+    <field name="descricao" type="CharField">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</field>
+  </object>
+  <object model="portfolio.formacao" pk="2">
+    <field name="sigla" type="CharField">ANPRI</field>
+    <field name="nome_escola" type="CharField">Associação Nacional de Professores de Informática</field>
+    <field name="link_escola" type="CharField">https://www.anpri.pt/</field>
+    <field name="curso" type="CharField">Introdução do desenvolvimento de jogos em Unity 3D</field>
+    <field name="descricao" type="CharField">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</field>
+  </object>
+  <object model="portfolio.formacao" pk="3">
+    <field name="sigla" type="CharField">ULHT</field>
+    <field name="nome_escola" type="CharField">Universidade Lusófona de Humanidades e Tecnologias</field>
+    <field name="link_escola" type="CharField">https://www.ulusofona.pt/?gclid=CjwKCAjwp7eUBhBeEiwAZbHwkW6FRgRugUnZInNvmijvHwuntr8QtYx_D6DrTbTiqyWD_sgIZa1RPRoCM-UQAvD_BwE</field>
+    <field name="curso" type="CharField">Licenciatura em Engenharia Informática</field>
+    <field name="descricao" type="CharField">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</field>
+  </object>
+  <object model="portfolio.formacao" pk="4">
+    <field name="sigla" type="CharField">.</field>
+    <field name="nome_escola" type="CharField">.</field>
+    <field name="link_escola" type="CharField"></field>
+    <field name="curso" type="CharField">.</field>
+    <field name="descricao" type="CharField">.</field>
+  </object>
+  <object model="portfolio.licenciatura" pk="1">
+    <field name="ano" type="IntegerField">1</field>
+    <field name="semestre" type="IntegerField">1</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object></field>
+  </object>
+  <object model="portfolio.licenciatura" pk="2">
+    <field name="ano" type="IntegerField">1</field>
+    <field name="semestre" type="IntegerField">2</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="6"></object><object pk="7"></object><object pk="8"></object><object pk="9"></object><object pk="10"></object><object pk="12"></object></field>
+  </object>
+  <object model="portfolio.licenciatura" pk="3">
+    <field name="ano" type="IntegerField">2</field>
+    <field name="semestre" type="IntegerField">1</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="13"></object><object pk="15"></object><object pk="16"></object><object pk="17"></object></field>
+  </object>
+  <object model="portfolio.licenciatura" pk="4">
+    <field name="ano" type="IntegerField">2</field>
+    <field name="semestre" type="IntegerField">2</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="18"></object><object pk="19"></object><object pk="20"></object><object pk="21"></object><object pk="22"></object></field>
+  </object>
+  <object model="portfolio.licenciatura" pk="5">
+    <field name="ano" type="IntegerField">3</field>
+    <field name="semestre" type="IntegerField">1</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="23"></object><object pk="24"></object><object pk="25"></object><object pk="26"></object><object pk="31"></object></field>
+  </object>
+  <object model="portfolio.licenciatura" pk="6">
+    <field name="ano" type="IntegerField">3</field>
+    <field name="semestre" type="IntegerField">2</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">3</field>
+    <field name="cadeiras" rel="ManyToManyRel" to="portfolio.cadeira"><object pk="27"></object><object pk="28"></object><object pk="29"></object><object pk="30"></object><object pk="32"></object></field>
+  </object>
+  <object model="portfolio.certificado" pk="1">
+    <field name="nome" type="CharField">Certificado INETE</field>
+    <field name="imagem" type="FileField">media/CertificadoINETE-1_cDaOOP6.png</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">1</field>
+  </object>
+  <object model="portfolio.certificado" pk="2">
+    <field name="nome" type="CharField">Certificado ANPRI</field>
+    <field name="imagem" type="FileField">media/ANPRI_Unity.jpg</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">2</field>
+  </object>
+  <object model="portfolio.certificado" pk="3">
+    <field name="nome" type="CharField">Certificado C</field>
+    <field name="imagem" type="FileField">media/Certificado_C_hwa6KNY.jpg</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">4</field>
+  </object>
+  <object model="portfolio.certificado" pk="4">
+    <field name="nome" type="CharField">Certificado C#</field>
+    <field name="imagem" type="FileField">media/Certificado_C.png</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">4</field>
+  </object>
+  <object model="portfolio.certificado" pk="5">
+    <field name="nome" type="CharField">Certificado Python</field>
+    <field name="imagem" type="FileField">media/CertificadoPython.png</field>
+    <field name="formacao" rel="ManyToOneRel" to="portfolio.formacao">4</field>
+  </object>
+  <object model="portfolio.noticia" pk="1">
+    <field name="titulo" type="CharField">Einstein was right. Flying clocks around the world in opposite directions proved it.</field>
+    <field name="descricao" type="CharField">Time isn’t the same for everyone, even on Earth. Flying around the world gave Einstein the ultimate test. No one is immune from relativity.</field>
+    <field name="link" type="CharField">https://medium.com/starts-with-a-bang/einstein-was-right-flying-clocks-around-the-world-in-opposite-directions-proved-it-4ccf39d232f9</field>
+    <field name="imagem" type="FileField">media/noticia1_94zy3yA.jpeg</field>
+  </object>
+  <object model="portfolio.noticia" pk="2">
+    <field name="titulo" type="CharField">The 10-Step Guide to Better Sleep</field>
+    <field name="descricao" type="CharField">Any one of these can help you fall asleep faster and sleep more soundly. Together they create a virtuous 24-hour cycle.</field>
+    <field name="link" type="CharField">https://robertroybritt.medium.com/the-10-step-guide-to-better-sleep-f150796fe4ce</field>
+    <field name="imagem" type="FileField">media/noticia2_Dq5ZhQA.jpeg</field>
+  </object>
+  <object model="portfolio.noticia" pk="3">
+    <field name="titulo" type="CharField">The Three-body Problem in Software Development</field>
+    <field name="descricao" type="CharField">Tight coupling in code is something that builds up with time because we treat different parts as one big whole. We should avoid doing that.</field>
+    <field name="link" type="CharField">https://betterprogramming.pub/the-three-body-problem-in-software-development-74adeda6807c</field>
+    <field name="imagem" type="FileField">media/noticia3_lJRlijp.jpeg</field>
+  </object>
+  <object model="portfolio.noticia" pk="4">
+    <field name="titulo" type="CharField">Elon Musk, the Poop Emoji, and the Embarrassing Twitter Sale Pantomime</field>
+    <field name="descricao" type="CharField">Forget bot control; the world needs troll control</field>
+    <field name="link" type="CharField">https://stephenmoore.medium.com/elon-musk-the-poop-emoji-and-the-embarrassing-twitter-sale-pantomime-10ba17d8ecbc</field>
+    <field name="imagem" type="FileField">media/noticia4_MbMn38D.png</field>
+  </object>
+  <object model="portfolio.noticia" pk="5">
+    <field name="titulo" type="CharField">How to Take a Break from Yourself</field>
+    <field name="descricao" type="CharField">Escaping from your routines can help you escape from repetitive, unhelpful thoughts</field>
+    <field name="link" type="CharField">https://medium.com/@mheidj/how-to-take-a-break-from-yourself-5e29796edbbe</field>
+    <field name="imagem" type="FileField">media/noticia5_GjarRzJ.jpg</field>
+  </object>
+  <object model="portfolio.noticia" pk="6">
+    <field name="titulo" type="CharField">How Often Should You Pee?</field>
+    <field name="descricao" type="CharField">What ‘having to go’ says about your health</field>
+    <field name="link" type="CharField">https://robertroybritt.medium.com/how-often-should-you-pee-524d4ed86d2a</field>
+    <field name="imagem" type="FileField">media/noticia6_R9BARtA.jpeg</field>
+  </object>
+  <object model="portfolio.noticia" pk="7">
+    <field name="titulo" type="CharField">How Much is an Astronaut’s Time Worth?</field>
+    <field name="descricao" type="CharField">Much of the International Space Station is available to rent</field>
+    <field name="link" type="CharField">https://medium.com/this-fascinating-world/how-much-is-an-astronauts-time-worth-e0e21491af72</field>
+    <field name="imagem" type="FileField">media/noticia7_tpHYhjv.jpg</field>
+  </object>
+  <object model="portfolio.noticia" pk="8">
+    <field name="titulo" type="CharField">The Art of Avatar Creation</field>
+    <field name="descricao" type="CharField">What drives players of games like “Elden Ring” to share screenshots of their avatars?</field>
+    <field name="link" type="CharField">https://immerse.news/the-art-of-avatar-creation-b7d291c6cd7f</field>
+    <field name="imagem" type="FileField">media/noticia8_gVPwRR7.png</field>
+  </object>
+  <object model="portfolio.noticia" pk="9">
+    <field name="titulo" type="CharField">Driving Is Killing Us</field>
+    <field name="descricao" type="CharField">You have the right to a walkable life</field>
+    <field name="link" type="CharField">https://antoniamalchik.medium.com/driving-is-killing-us-6a1b35158458</field>
+    <field name="imagem" type="FileField">media/noticia9_HSy92Z5.jpeg</field>
+  </object>
+  <object model="portfolio.noticia" pk="10">
+    <field name="titulo" type="CharField">How a Machine Can Tell If You’re an Asshole</field>
+    <field name="descricao" type="CharField">An interview with the designers behind the “Are You The Asshole” bot</field>
+    <field name="link" type="CharField">https://newanddigital.medium.com/how-a-machine-can-tell-if-youre-an-asshole-a9d290df7519</field>
+    <field name="imagem" type="FileField">media/noticia10_cW8epKB.jpeg</field>
+  </object>
+  <object model="portfolio.tecnologias" pk="1">
+    <field name="nome" type="CharField">Cascade Style Sheet</field>
+    <field name="acronimo" type="CharField">CSS</field>
+    <field name="ano_criacao" type="IntegerField">1994</field>
+    <field name="criador" type="CharField">Hakon Lie</field>
+    <field name="logotipo" type="FileField">portfolio/media/deisi_ionfxy</field>
+    <field name="link" type="CharField"></field>
+    <field name="descricao" type="CharField">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags &lt;style&gt;. Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos.</field>
+  </object>
+  <object model="portfolio.tecnologias" pk="2">
+    <field name="nome" type="CharField">Hypertext Markup Language</field>
+    <field name="acronimo" type="CharField">Html</field>
+    <field name="ano_criacao" type="IntegerField">1991</field>
+    <field name="criador" type="CharField">Tim Berners-Lee</field>
+    <field name="logotipo" type="FileField">portfolio/media/deisi_mkgqmm</field>
+    <field name="link" type="CharField"></field>
+    <field name="descricao" type="CharField">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser                     interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime                     é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.</field>
+  </object>
+  <object model="portfolio.tecnologias" pk="3">
+    <field name="nome" type="CharField">Django</field>
+    <field name="acronimo" type="CharField">.</field>
+    <field name="ano_criacao" type="IntegerField">2005</field>
+    <field name="criador" type="CharField">Django Software Foundation</field>
+    <field name="logotipo" type="FileField">portfolio/media/deisi_bddcya</field>
+    <field name="link" type="CharField">https://www.djangoproject.com/</field>
+    <field name="descricao" type="CharField">Django é um framework para desenvolvimento rápido para web, escrito em Python, que utiliza o padrão model-template-view. Foi criado originalmente como sistema para gerenciar um site jornalístico na cidade de Lawrence, no Kansas. Tornou-se um projeto de código aberto e foi publicado sob a licença BSD em 2005.</field>
+  </object>
+</django-objects>

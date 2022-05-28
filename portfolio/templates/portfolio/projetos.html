@@ -30,9 +30,9 @@
 
                     <div class="foto">
                         <a>
-                            {% load cloudinary %}
-                            {% cloudinary projeto.imagemGrande.name width=100 height=100 %}
-                            {% cloudinary projeto.gif.name width=100 height=100 %}
+
+                            <img src="{{projeto.imagemGrande.url}}" width=100 height=100>
+                            <img src="{{projeto.gif.url}}" width=100 height=100>
                         </a>
                     </div>
                     <p class="descricao"> {{projeto.descricao}} </p>

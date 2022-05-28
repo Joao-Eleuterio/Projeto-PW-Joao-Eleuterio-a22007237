@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from django import forms
-from .models import Post, Quizz, Projetos, Licenciatura, Cadeira, Noticia
+from .models import Quizz, Projetos, Licenciatura, Cadeira, Noticia, Post
 
 
 class PostForm(ModelForm):

@@ -1,0 +1,1402 @@
+[
+  {
+    "model": "portfolio.post",
+    "pk": 20,
+    "fields": {
+      "autor": "2022-05-22 10:30:54.765366+00:00",
+      "data": "2022-05-20T16:22:42Z",
+      "titulo": "T�tulo",
+      "descricao": "Isto foi editado",
+      "link": ""
+    }
+  },
+  {
+    "model": "portfolio.post",
+    "pk": 26,
+    "fields": {
+      "autor": "Jo�o Eleut�rio",
+      "data": "2022-05-26T08:37:49Z",
+      "titulo": "Fazer lab8",
+      "descricao": "O lab8 consiste em estruturar o portfolio",
+      "link": "https://github.com/ULHT-PW/pw-lab8"
+    }
+  },
+  {
+    "model": "portfolio.post",
+    "pk": 27,
+    "fields": {
+      "autor": "Jo�o Eleut�rio",
+      "data": "2022-05-26T08:37:49Z",
+      "titulo": "Fazer lab9",
+      "descricao": "O lab9 consiste em utilizar django no portfolio",
+      "link": "https://github.com/ULHT-PW/pw-lab9"
+    }
+  },
+  {
+    "model": "portfolio.post",
+    "pk": 28,
+    "fields": {
+      "autor": "Jo�o Eleut�rio",
+      "data": "2022-05-26T08:37:49Z",
+      "titulo": "Fazer lab10",
+      "descricao": "O lab10 consiste em fazer um login no portfolio",
+      "link": "https://github.com/ULHT-PW/pw-lab10"
+    }
+  },
+  {
+    "model": "portfolio.post",
+    "pk": 29,
+    "fields": {
+      "autor": "Jo�o Eleut�rio",
+      "data": "2022-05-28T19:20:00.935Z",
+      "titulo": "Nova Post",
+      "descricao": "Criado pelo Form",
+      "link": "https://www.google.com/"
+    }
+  },
+  {
+    "model": "portfolio.post",
+    "pk": 30,
+    "fields": {
+      "autor": "Autor",
+      "data": "2022-05-28T19:24:43.466Z",
+      "titulo": "HAHAHAHAHAHA",
+      "descricao": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "link": "http://127.0.0.1:8000/edita/20"
+    }
+  },
+  {
+    "model": "portfolio.quizz",
+    "pk": 8,
+    "fields": {
+      "nome": "Jo�o",
+      "pergunta1": "lins",
+      "pergunta2": "framework",
+      "pergunta3": 2005,
+      "pergunta4": 1994,
+      "pergunta5": "nao sei"
+    }
+  },
+  {
+    "model": "portfolio.quizz",
+    "pk": 9,
+    "fields": {
+      "nome": "Jo�o Pedro",
+      "pergunta1": "linguagem de marca��o",
+      "pergunta2": "framework",
+      "pergunta3": 2005,
+      "pergunta4": 1994,
+      "pergunta5": "cascading style sheet"
+    }
+  },
+  {
+    "model": "portfolio.quizz",
+    "pk": 10,
+    "fields": {
+      "nome": "Ricardo",
+      "pergunta1": "a",
+      "pergunta2": "a",
+      "pergunta3": 1,
+      "pergunta4": 1,
+      "pergunta5": "a"
+    }
+  },
+  {
+    "model": "portfolio.quizz",
+    "pk": 11,
+    "fields": {
+      "nome": "Marco",
+      "pergunta1": "linguagem de marca��o",
+      "pergunta2": "framework",
+      "pergunta3": 2005,
+      "pergunta4": 1991,
+      "pergunta5": "cascading style sheet"
+    }
+  },
+  {
+    "model": "portfolio.quizz",
+    "pk": 12,
+    "fields": {
+      "nome": "Mario",
+      "pergunta1": "21",
+      "pergunta2": "framework",
+      "pergunta3": 2005,
+      "pergunta4": 12312,
+      "pergunta5": "cascading style sheet"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 1,
+    "fields": {
+      "nome": "Cristiane Ferreira Nunes",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/cristiane-da-silva-ferreira-nunes"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 2,
+    "fields": {
+      "nome": "Cristina Ribeiro Guerra",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/cristina-maria-ribeiro-guerra"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 3,
+    "fields": {
+      "nome": "Pedro Alves",
+      "link_linkedin": "https://www.linkedin.com/in/palves/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/pedro-hugo-de-queiros-alves"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 4,
+    "fields": {
+      "nome": "Bruno Saraiva",
+      "link_linkedin": "https://www.linkedin.com/in/bdsaraiva/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/bruno-david-ferreira-saraiva"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 5,
+    "fields": {
+      "nome": "Teresa Almada",
+      "link_linkedin": "https://www.linkedin.com/in/teresa-almada-90113bb3/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/teresa-maria-catanho-da-silva-almada"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 6,
+    "fields": {
+      "nome": "Aleksandar mikovic",
+      "link_linkedin": "https://www.linkedin.com/in/aleksandar-mikovic-4a76b263/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/aleksandar-mikovic"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 7,
+    "fields": {
+      "nome": "Andre Da Fonseca",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/andre-vieira-vassalo-da-fonseca"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 8,
+    "fields": {
+      "nome": "Maria Silva Fino",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/maria-helena-silva-fino"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 9,
+    "fields": {
+      "nome": "Jo�o Matos Carvalho",
+      "link_linkedin": "https://www.linkedin.com/in/jplcarvalho/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/joao-pedro-leal-abalada-de-matos-carvalho"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 10,
+    "fields": {
+      "nome": "Rodrigo Correia",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/rodrigo-coutinho-correia"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 11,
+    "fields": {
+      "nome": "Sergio Mestre Ferreira",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/sergio-pedro-mestre-ferreira"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 12,
+    "fields": {
+      "nome": "Diogo Gil Morais",
+      "link_linkedin": "https://www.linkedin.com/in/diogogilmorais1980/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/diogo-soares-pereira-gil-morais"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 13,
+    "fields": {
+      "nome": "Manuel Costa Leite",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/manuel-da-costa-leite"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 14,
+    "fields": {
+      "nome": "Pedro Arroz Serra",
+      "link_linkedin": "https://www.linkedin.com/in/pedroarroz/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/pedro-arroz-correia-bonifacio-serra"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 15,
+    "fields": {
+      "nome": "Andrea Costigliola",
+      "link_linkedin": "https://www.linkedin.com/in/acostigliola/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/andrea-costigliola"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 16,
+    "fields": {
+      "nome": "Rui Ribeiro",
+      "link_linkedin": "https://www.linkedin.com/in/ruipedronobreribeiro/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/rui-pedro-nobre-ribeiro"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 17,
+    "fields": {
+      "nome": "Jos� Aser",
+      "link_linkedin": "https://www.linkedin.com/in/joseaser/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/jose-aser-castillo-lorenzo"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 18,
+    "fields": {
+      "nome": "Lucio Studer",
+      "link_linkedin": "https://www.linkedin.com/in/luciostuderferreira/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/lucio-miguel-studer-ferreira"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 19,
+    "fields": {
+      "nome": "Jo�o Canto",
+      "link_linkedin": "https://www.linkedin.com/in/jo%C3%A3o-canto-85330440/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/joao-carlos-roquete-fidalgo-canto"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 20,
+    "fields": {
+      "nome": "Slavisa Tomic",
+      "link_linkedin": "https://www.linkedin.com/in/slavisa-tomic-b886b066/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/slavisa-tomic"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 21,
+    "fields": {
+      "nome": "Naercio Magaia",
+      "link_linkedin": "https://www.linkedin.com/in/naerciomagaia/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/naercio-david-pedro-magaia"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 22,
+    "fields": {
+      "nome": "S�rgio Nunes",
+      "link_linkedin": "https://www.linkedin.com/in/sergiornunes/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/sergio-rodrigues-nunes"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 23,
+    "fields": {
+      "nome": "Luis Gomes",
+      "link_linkedin": "https://www.linkedin.com/in/lu%C3%ADs-alexandre-gomes-a778757/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/luis-alexandre-ferreira-de-oliveira-gomes"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 24,
+    "fields": {
+      "nome": "Pedro Perdig�o",
+      "link_linkedin": "https://www.linkedin.com/in/pedroalmeidaperdigao/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/pedro-de-almeida-perdigao"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 25,
+    "fields": {
+      "nome": "Liliana Carvalho",
+      "link_linkedin": "https://www.linkedin.com/in/liliana-inocencio-carvalho-phdstudent/",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 26,
+    "fields": {
+      "nome": "Jo�o Lic�nio",
+      "link_linkedin": "",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/joao-licinio-cabral-da-silva"
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 30,
+    "fields": {
+      "nome": "Sozinho",
+      "link_linkedin": "",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 31,
+    "fields": {
+      "nome": "M�rio Silva",
+      "link_linkedin": "https://www.linkedin.com/in/m%C3%A1rio-j-malta-silva-6b6225207/",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 32,
+    "fields": {
+      "nome": "Alexandre Costa",
+      "link_linkedin": "https://www.linkedin.com/in/alexandre-costa-b63347209/",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 33,
+    "fields": {
+      "nome": "Ricardo Cleto",
+      "link_linkedin": "https://www.linkedin.com/in/ricardo-cleto-8114b5208/",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 34,
+    "fields": {
+      "nome": "Jos� Sobral",
+      "link_linkedin": "https://www.linkedin.com/in/jos%C3%A9-sobral-26621720b/",
+      "link_lusofona": ""
+    }
+  },
+  {
+    "model": "portfolio.pessoa",
+    "pk": 35,
+    "fields": {
+      "nome": "Sergio Nunes",
+      "link_linkedin": "https://www.linkedin.com/in/sergiornunes/",
+      "link_lusofona": "https://www.ulusofona.pt/docentes/sergio-rodrigues-nunes"
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 10,
+    "fields": {
+      "nome_do_projeto": "Fisica catapulta com coordenadas",
+      "imagem": "media/GraficoFisica.png",
+      "imagemGrande": "media/GraficoFisica_Grande_jkLK5AP.png",
+      "gif": "media/graficoFisica_Nln9sfc.gif",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Fundamentos de F�sica",
+      "ano_realizacao": 2020,
+      "link_github": "https://github.com/Joao-Eleuterio/Fisica-Catapulta-com-coords",
+      "linguagens": "Kotlin",
+      "projetoDownload": "",
+      "participantes": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 11,
+    "fields": {
+      "nome_do_projeto": "Xadrez",
+      "imagem": "media/Xadrez_zRWo0W3.png",
+      "imagemGrande": "media/Xadrez_Grande.png",
+      "gif": "media/grafico_final_LdBLiNL.png",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Fundamentos de Programa��o",
+      "ano_realizacao": 2020,
+      "link_github": "https://github.com/Joao-Eleuterio/Xadrez",
+      "linguagens": "Kotlin",
+      "projetoDownload": "",
+      "participantes": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 12,
+    "fields": {
+      "nome_do_projeto": "Leitor de M�sicas",
+      "imagem": "media/deisi_R0Pp4kk.png",
+      "imagemGrande": "media/grafico_final_OOg5mKC.png",
+      "gif": "media/giphy_F8nbWde.gif",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Algoritmia de Estrutura de Dados",
+      "ano_realizacao": 2020,
+      "link_github": "https://github.com/Joao-Eleuterio/Leitor-de-Musica",
+      "linguagens": "Java",
+      "projetoDownload": "",
+      "participantes": [
+        30,
+        32
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 13,
+    "fields": {
+      "nome_do_projeto": "DeisiGreatGame",
+      "imagem": "media/deisi_7dhAY4g.png",
+      "imagemGrande": "media/deisi_Grande.png",
+      "gif": "media/graficoFisica_42cJjLc.gif",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Linguagens de Programa��o II",
+      "ano_realizacao": 2021,
+      "link_github": "https://github.com/Joao-Eleuterio/LP2---22007237-22007457-deisiGreatGame",
+      "linguagens": "Java, Kotlin",
+      "projetoDownload": "",
+      "participantes": [
+        30,
+        31
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 14,
+    "fields": {
+      "nome_do_projeto": "HotMaze",
+      "imagem": "media/HotMaze.png",
+      "imagemGrande": "media/HotMaze_Grande.png",
+      "gif": "media/grafico_final_CuGVPxI.png",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": ".",
+      "ano_realizacao": 2020,
+      "link_github": "https://github.com/Joao-Eleuterio/HotMaze",
+      "linguagens": "C#",
+      "projetoDownload": "",
+      "participantes": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 15,
+    "fields": {
+      "nome_do_projeto": "Rega",
+      "imagem": "media/deisi_QJiiiIc.png",
+      "imagemGrande": "media/grafico_final_4kVUVi5.png",
+      "gif": "media/grafico_final_uYwb8CT.png",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Arquitetura de Computadores",
+      "ano_realizacao": 2021,
+      "link_github": "https://github.com/Joao-Eleuterio/Rega",
+      "linguagens": "Assembly",
+      "projetoDownload": "",
+      "participantes": [
+        30,
+        32
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 16,
+    "fields": {
+      "nome_do_projeto": "bombroad",
+      "imagem": "media/deisi_VAo27lf.png",
+      "imagemGrande": "media/grafico_final_AI6xE7a.png",
+      "gif": "media/graficoFisica_uRud1ek.gif",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Linguagens de Programa��o I",
+      "ano_realizacao": 2021,
+      "link_github": "https://github.com/Joao-Eleuterio/bombroad",
+      "linguagens": "C",
+      "projetoDownload": "",
+      "participantes": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 17,
+    "fields": {
+      "nome_do_projeto": ".",
+      "imagem": "media/deisi_0jXcIiJ.png",
+      "imagemGrande": "media/codigo4.jpg",
+      "gif": "media/componente1.jpeg",
+      "descricao": ".",
+      "cadeira": ".",
+      "ano_realizacao": 1,
+      "link_github": "",
+      "linguagens": "",
+      "projetoDownload": "",
+      "participantes": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 19,
+    "fields": {
+      "nome_do_projeto": "Carro",
+      "imagem": "media/Carro.png",
+      "imagemGrande": "media/Carro_Grande.png",
+      "gif": "media/componente1_rQubP3D.jpeg",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Arquitetura Avan�ada de Computadores",
+      "ano_realizacao": 2021,
+      "link_github": "https://github.com/Joao-Eleuterio/CarroLogisim",
+      "linguagens": "C",
+      "projetoDownload": "",
+      "participantes": [
+        30,
+        32,
+        33,
+        34
+      ]
+    }
+  },
+  {
+    "model": "portfolio.projetos",
+    "pk": 21,
+    "fields": {
+      "nome_do_projeto": "Sinais",
+      "imagem": "media/deisi.png",
+      "imagemGrande": "media/grafico_4Sj0kqI.png",
+      "gif": "media/grafico_final_95WvunJ.png",
+      "descricao": "Uma catapulta que lan�a pedras, � utilizada para provocar um deslizamento de terra numa montanha inclinada. Pretende-se que as pedras atinjam um ponto estrat�gico situado � dist�ncia horizontal de 250m a partir da catapulta e 50 m acima desta (na vertical). O programa deve permitir fazer variar as coordenadas do ponto alvo para se poderem estudar outros cen�rio.",
+      "cadeira": "Sinais e Sistemas",
+      "ano_realizacao": 2021,
+      "link_github": "https://github.com/Joao-Eleuterio/ProjetoSinais",
+      "linguagens": "",
+      "projetoDownload": "",
+      "participantes": [
+        30,
+        32
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 1,
+    "fields": {
+      "nome_cadeira": "Fundamentos de F�sica",
+      "ano_realizado": 2020,
+      "ects": 6,
+      "ranking": 0,
+      "projeto": 10,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/fundamentos-de-fisica/ULHT260-7336",
+      "professores": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 2,
+    "fields": {
+      "nome_cadeira": "Fundamentos de Programa��o",
+      "ano_realizado": 2020,
+      "ects": 6,
+      "ranking": 1,
+      "projeto": 11,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/fundamentos-de-programacao/ULHT260-7337",
+      "professores": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 3,
+    "fields": {
+      "nome_cadeira": "Matem�tica Discreta",
+      "ano_realizado": 2020,
+      "ects": 6,
+      "ranking": 3,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-discreta/ULHT260-1656",
+      "professores": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 4,
+    "fields": {
+      "nome_cadeira": "Matem�tica I",
+      "ano_realizado": 2020,
+      "ects": 6,
+      "ranking": 5,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-i/ULHT260-1",
+      "professores": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 5,
+    "fields": {
+      "nome_cadeira": "Sistemas Digitais",
+      "ano_realizado": 2020,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-digitais/ULHT260-7",
+      "professores": [
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 6,
+    "fields": {
+      "nome_cadeira": "�lgebra Linear",
+      "ano_realizado": 2021,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/algebra-linear/ULHT260-2091",
+      "professores": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 7,
+    "fields": {
+      "nome_cadeira": "Algoritmia e Estrutura de Dados",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 12,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/algoritmia-e-estruturas-de-dados/ULHT260-13397",
+      "professores": [
+        3,
+        10
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 8,
+    "fields": {
+      "nome_cadeira": "Arquitetura de Computadores",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 15,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/arquitetura-de-computadores/ULHT260-5857",
+      "professores": [
+        11
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 9,
+    "fields": {
+      "nome_cadeira": "Compet�ncia Comportamentais",
+      "ano_realizado": 2021,
+      "ects": 4,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/competencias-comportamentais/ULHT260-17267",
+      "professores": [
+        12,
+        13
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 10,
+    "fields": {
+      "nome_cadeira": "Linguagens de Programa��o I",
+      "ano_realizado": 2021,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 16,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/linguagens-de-programacao-i/ULHT260-498",
+      "professores": [
+        14
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 12,
+    "fields": {
+      "nome_cadeira": "Matem�tica II",
+      "ano_realizado": 2021,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/matematica-ii/ULHT260-505",
+      "professores": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 13,
+    "fields": {
+      "nome_cadeira": "Arquitetura Avan�ada de Computadores",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 19,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/arquiteturas-avancadas-de-computadores/ULHT260-13398",
+      "professores": [
+        14,
+        15
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 15,
+    "fields": {
+      "nome_cadeira": "Linguagens de Programa��o II",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 13,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/linguagens-de-programacao-ii/ULHT260-898",
+      "professores": [
+        3,
+        18
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 16,
+    "fields": {
+      "nome_cadeira": "Sinais e Sistemas",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 21,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sinais-e-sistemas/ULHT260-7339",
+      "professores": [
+        19,
+        20
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 17,
+    "fields": {
+      "nome_cadeira": "Sistemas Operativos",
+      "ano_realizado": 2021,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-operativos/ULHT260-6305",
+      "professores": [
+        21,
+        35
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 18,
+    "fields": {
+      "nome_cadeira": "Computa��o Gr�fica",
+      "ano_realizado": 2022,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-grafica/ULHT260-2267",
+      "professores": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 19,
+    "fields": {
+      "nome_cadeira": "Engenharia de Requisitos e Testes",
+      "ano_realizado": 2022,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/engenharia-de-requisitos-e-testes/ULHT260-22512",
+      "professores": [
+        16,
+        23
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 20,
+    "fields": {
+      "nome_cadeira": "Programa��o Web",
+      "ano_realizado": 2022,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/programacao-web/ULHT260-11195",
+      "professores": [
+        18,
+        24
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 21,
+    "fields": {
+      "nome_cadeira": "Redes de Computadores",
+      "ano_realizado": 2022,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/redes-de-computadores/ULHT260-1793",
+      "professores": [
+        25,
+        35
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 22,
+    "fields": {
+      "nome_cadeira": "Sistemas de Suporte � Decis�o",
+      "ano_realizado": 2022,
+      "ects": 6,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-de-suporte-a-decisao/ULHT260-7303",
+      "professores": [
+        16,
+        26
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 23,
+    "fields": {
+      "nome_cadeira": "Trabalho Final de Curso",
+      "ano_realizado": 2022,
+      "ects": 20,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/trabalho-final-de-curso/ULHT260-5140",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 24,
+    "fields": {
+      "nome_cadeira": "Computa��o Distribu�da",
+      "ano_realizado": 2022,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-distribuida/ULHT260-7348",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 25,
+    "fields": {
+      "nome_cadeira": "Engenharia de Software",
+      "ano_realizado": 2022,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/engenharia-de-software/ULHT260-7341",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 26,
+    "fields": {
+      "nome_cadeira": "Intera��o Humano-M�quina",
+      "ano_realizado": 2022,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/interacao-humano-maquina/ULHT260-11047",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 27,
+    "fields": {
+      "nome_cadeira": "Trabalho Final de Curso(Cont.)",
+      "ano_realizado": 2023,
+      "ects": 20,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/trabalho-final-de-curso/ULHT260-5140",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 28,
+    "fields": {
+      "nome_cadeira": "Computa��o M�vel",
+      "ano_realizado": 2023,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/computacao-movel/ULHT260-16925",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 29,
+    "fields": {
+      "nome_cadeira": "Seguran�a Inform�tica",
+      "ano_realizado": 2023,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/seguranca-informatica/ULHT260-11194",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 30,
+    "fields": {
+      "nome_cadeira": "Sistemas de Informa��o na Nuvem",
+      "ano_realizado": 2023,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/sistemas-de-informacao-na-nuvem/ULHT260-22514",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 31,
+    "fields": {
+      "nome_cadeira": "Data Science",
+      "ano_realizado": 2022,
+      "ects": 5,
+      "ranking": 4,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/data-science/ULHT260-22513",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.cadeira",
+    "pk": 32,
+    "fields": {
+      "nome_cadeira": "Intelig�ncia Artificial",
+      "ano_realizado": 2023,
+      "ects": 5,
+      "ranking": 5,
+      "projeto": 17,
+      "link_Lusofona": "https://www.ulusofona.pt/licenciaturas/engenharia-informatica/inteligencia-artificial/ULHT260-2129",
+      "professores": [
+        30
+      ]
+    }
+  },
+  {
+    "model": "portfolio.formacao",
+    "pk": 1,
+    "fields": {
+      "sigla": "INETE",
+      "nome_escola": "Instituto De Educa��o Tecnica",
+      "link_escola": "https://www.inete.pt/",
+      "curso": "T�CNICO DE GEST�O E PROGRAMA��O DE SISTEMAS INFORM�TICOS",
+      "descricao": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  {
+    "model": "portfolio.formacao",
+    "pk": 2,
+    "fields": {
+      "sigla": "ANPRI",
+      "nome_escola": "Associa��o Nacional de Professores de Inform�tica",
+      "link_escola": "https://www.anpri.pt/",
+      "curso": "Introdu��o do desenvolvimento de jogos em Unity 3D",
+      "descricao": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  {
+    "model": "portfolio.formacao",
+    "pk": 3,
+    "fields": {
+      "sigla": "ULHT",
+      "nome_escola": "Universidade Lus�fona de Humanidades e Tecnologias",
+      "link_escola": "https://www.ulusofona.pt/?gclid=CjwKCAjwp7eUBhBeEiwAZbHwkW6FRgRugUnZInNvmijvHwuntr8QtYx_D6DrTbTiqyWD_sgIZa1RPRoCM-UQAvD_BwE",
+      "curso": "Licenciatura em Engenharia Inform�tica",
+      "descricao": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  {
+    "model": "portfolio.formacao",
+    "pk": 4,
+    "fields": {
+      "sigla": ".",
+      "nome_escola": ".",
+      "link_escola": "",
+      "curso": ".",
+      "descricao": "."
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 1,
+    "fields": {
+      "ano": 1,
+      "semestre": 1,
+      "formacao": 3,
+      "cadeiras": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 2,
+    "fields": {
+      "ano": 1,
+      "semestre": 2,
+      "formacao": 3,
+      "cadeiras": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ]
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 3,
+    "fields": {
+      "ano": 2,
+      "semestre": 1,
+      "formacao": 3,
+      "cadeiras": [
+        13,
+        15,
+        16,
+        17
+      ]
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 4,
+    "fields": {
+      "ano": 2,
+      "semestre": 2,
+      "formacao": 3,
+      "cadeiras": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 5,
+    "fields": {
+      "ano": 3,
+      "semestre": 1,
+      "formacao": 3,
+      "cadeiras": [
+        23,
+        24,
+        25,
+        26,
+        31
+      ]
+    }
+  },
+  {
+    "model": "portfolio.licenciatura",
+    "pk": 6,
+    "fields": {
+      "ano": 3,
+      "semestre": 2,
+      "formacao": 3,
+      "cadeiras": [
+        27,
+        28,
+        29,
+        30,
+        32
+      ]
+    }
+  },
+  {
+    "model": "portfolio.certificado",
+    "pk": 1,
+    "fields": {
+      "nome": "Certificado INETE",
+      "imagem": "media/CertificadoINETE-1_cDaOOP6.png",
+      "formacao": 1
+    }
+  },
+  {
+    "model": "portfolio.certificado",
+    "pk": 2,
+    "fields": {
+      "nome": "Certificado ANPRI",
+      "imagem": "media/ANPRI_Unity.jpg",
+      "formacao": 2
+    }
+  },
+  {
+    "model": "portfolio.certificado",
+    "pk": 3,
+    "fields": {
+      "nome": "Certificado C",
+      "imagem": "media/Certificado_C_hwa6KNY.jpg",
+      "formacao": 4
+    }
+  },
+  {
+    "model": "portfolio.certificado",
+    "pk": 4,
+    "fields": {
+      "nome": "Certificado C#",
+      "imagem": "media/Certificado_C.png",
+      "formacao": 4
+    }
+  },
+  {
+    "model": "portfolio.certificado",
+    "pk": 5,
+    "fields": {
+      "nome": "Certificado Python",
+      "imagem": "media/CertificadoPython.png",
+      "formacao": 4
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 1,
+    "fields": {
+      "titulo": "Einstein was right. Flying clocks around the world in opposite directions proved it.",
+      "descricao": "Time isn�t the same for everyone, even on Earth. Flying around the world gave Einstein the ultimate test. No one is immune from relativity.",
+      "link": "https://medium.com/starts-with-a-bang/einstein-was-right-flying-clocks-around-the-world-in-opposite-directions-proved-it-4ccf39d232f9",
+      "imagem": "media/noticia1_94zy3yA.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 2,
+    "fields": {
+      "titulo": "The 10-Step Guide to Better Sleep",
+      "descricao": "Any one of these can help you fall asleep faster and sleep more soundly. Together they create a virtuous 24-hour cycle.",
+      "link": "https://robertroybritt.medium.com/the-10-step-guide-to-better-sleep-f150796fe4ce",
+      "imagem": "media/noticia2_Dq5ZhQA.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 3,
+    "fields": {
+      "titulo": "The Three-body Problem in Software Development",
+      "descricao": "Tight coupling in code is something that builds up with time because we treat different parts as one big whole. We should avoid doing that.",
+      "link": "https://betterprogramming.pub/the-three-body-problem-in-software-development-74adeda6807c",
+      "imagem": "media/noticia3_lJRlijp.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 4,
+    "fields": {
+      "titulo": "Elon Musk, the Poop Emoji, and the Embarrassing Twitter Sale Pantomime",
+      "descricao": "Forget bot control; the world needs troll control",
+      "link": "https://stephenmoore.medium.com/elon-musk-the-poop-emoji-and-the-embarrassing-twitter-sale-pantomime-10ba17d8ecbc",
+      "imagem": "media/noticia4_MbMn38D.png"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 5,
+    "fields": {
+      "titulo": "How to Take a Break from Yourself",
+      "descricao": "Escaping from your routines can help you escape from repetitive, unhelpful thoughts",
+      "link": "https://medium.com/@mheidj/how-to-take-a-break-from-yourself-5e29796edbbe",
+      "imagem": "media/noticia5_GjarRzJ.jpg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 6,
+    "fields": {
+      "titulo": "How Often Should You Pee?",
+      "descricao": "What �having to go� says about your health",
+      "link": "https://robertroybritt.medium.com/how-often-should-you-pee-524d4ed86d2a",
+      "imagem": "media/noticia6_R9BARtA.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 7,
+    "fields": {
+      "titulo": "How Much is an Astronaut�s Time Worth?",
+      "descricao": "Much of the International Space Station is available to rent",
+      "link": "https://medium.com/this-fascinating-world/how-much-is-an-astronauts-time-worth-e0e21491af72",
+      "imagem": "media/noticia7_tpHYhjv.jpg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 8,
+    "fields": {
+      "titulo": "The Art of Avatar Creation",
+      "descricao": "What drives players of games like �Elden Ring� to share screenshots of their avatars?",
+      "link": "https://immerse.news/the-art-of-avatar-creation-b7d291c6cd7f",
+      "imagem": "media/noticia8_gVPwRR7.png"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 9,
+    "fields": {
+      "titulo": "Driving Is Killing Us",
+      "descricao": "You have the right to a walkable life",
+      "link": "https://antoniamalchik.medium.com/driving-is-killing-us-6a1b35158458",
+      "imagem": "media/noticia9_HSy92Z5.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.noticia",
+    "pk": 10,
+    "fields": {
+      "titulo": "How a Machine Can Tell If You�re an Asshole",
+      "descricao": "An interview with the designers behind the �Are You The Asshole� bot",
+      "link": "https://newanddigital.medium.com/how-a-machine-can-tell-if-youre-an-asshole-a9d290df7519",
+      "imagem": "media/noticia10_cW8epKB.jpeg"
+    }
+  },
+  {
+    "model": "portfolio.tecnologias",
+    "pk": 1,
+    "fields": {
+      "nome": "Cascade Style Sheet",
+      "acronimo": "CSS",
+      "ano_criacao": 1994,
+      "criador": "Hakon Lie",
+      "logotipo": "portfolio/media/deisi_ionfxy",
+      "link": "",
+      "descricao": "Cascading Style Sheets � um mecanismo para adicionar estilo a um documento web. O c�digo CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags <style>. Tamb�m � poss�vel, em vez de colocar a formata��o dentro do documento, criar um link para um arquivo CSS que cont�m os estilos."
+    }
+  },
+  {
+    "model": "portfolio.tecnologias",
+    "pk": 2,
+    "fields": {
+      "nome": "Hypertext Markup Language",
+      "acronimo": "Html",
+      "ano_criacao": 1991,
+      "criador": "Tim Berners-Lee",
+      "logotipo": "portfolio/media/deisi_mkgqmm",
+      "link": "",
+      "descricao": "HTML � uma linguagem de marca��o utilizada na constru��o de p�ginas na Web. Documentos HTML podem ser                     interpretados por navegadores. A tecnologia � fruto da jun��o entre os padr�es HyTime e SGML. HyTime                     � um padr�o para a representa��o estruturada de hiperm�dia e conte�do baseado em tempo."
+    }
+  },
+  {
+    "model": "portfolio.tecnologias",
+    "pk": 3,
+    "fields": {
+      "nome": "Django",
+      "acronimo": ".",
+      "ano_criacao": 2005,
+      "criador": "Django Software Foundation",
+      "logotipo": "portfolio/media/deisi_bddcya",
+      "link": "https://www.djangoproject.com/",
+      "descricao": "Django � um framework para desenvolvimento r�pido para web, escrito em Python, que utiliza o padr�o model-template-view. Foi criado originalmente como sistema para gerenciar um site jornal�stico na cidade de Lawrence, no Kansas. Tornou-se um projeto de c�digo aberto e foi publicado sob a licen�a BSD em 2005."
+    }
+  }
+]

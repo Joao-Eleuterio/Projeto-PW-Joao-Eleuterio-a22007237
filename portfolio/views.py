@@ -91,6 +91,7 @@ def sobreWebsite_page_view(request):
 
 
 def noticia_page_view(request):
+
     context = {'noticias': Noticia.objects.all()}
 
     return render(request, 'portfolio/noticia.html', context)
