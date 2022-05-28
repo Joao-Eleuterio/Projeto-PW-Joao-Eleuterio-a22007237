@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from django import forms
-from .models import Post, Quizz, Projetos, Licenciatura, Cadeira
+from .models import Post, Quizz, Projetos, Licenciatura, Cadeira, Noticia
 
 
 class PostForm(ModelForm):
@@ -8,11 +8,6 @@ class PostForm(ModelForm):
         model = Post
         fields = '__all__'
         # inserção de classes CSS para formatação de cada campo do formulário
-        widgets = {
-            'titulo': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'descrição do post...'}),
-            'prioridade': forms.NumberInput(attrs={'class': 'form-control', 'max': 3, 'min': 1}),
-
-        }
 
         # texto a exibir junto à janela de inserção
         labels = {
@@ -60,12 +55,14 @@ class ProjetosForm(ModelForm):
         model = Projetos
         fields = '__all__'
 
-        widgets = {
-        }
-
         labels = {
+            'Nome do projeto': 'Insira o nome do seu projeto',
 
-            'imagem': 'Insira uma foto do seu projeto',
+            'imagem': 'Insira uma foto do seu projeto (200 x height)',
+
+            'imagemGrande': 'Insira uma foto grande(pode ser a mesma) do seu projeto (500 x height)',
+
+            'gif': 'Insira um gif da utilização do projeto',
 
             'descricao': 'Insira a descrição do projeto',
 
@@ -76,9 +73,14 @@ class ProjetosForm(ModelForm):
             'participantes': 'Participantes:',
 
             'link_github': 'Link do GitHub do projeto',
+
+            'Linguagens': 'Linguagens utilizadas no projeto',
+
+            'Download': 'Projeto para download',
         }
 
         help_texts = {
+
         }
 
 
@@ -127,4 +129,23 @@ class FormacaoForm(ModelForm):
         }
 
         help_texts = {
+        }
+
+
+class NoticiaForm(ModelForm):
+    class Meta:
+        model = Noticia
+        fields = '__all__'
+
+        # texto a exibir junto à janela de inserção
+        labels = {
+            'titulo': 'Título',
+            'descricao': 'Descrição',
+            'link': 'Link',
+            'imagem': 'Imagem'
+        }
+
+        # texto auxiliar a um determinado campo do formulário
+        help_texts = {
+
         }

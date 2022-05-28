@@ -8,9 +8,9 @@
 {% endblock style %}
 {% block main %}
 <h1 class="titulo">Projetos</h1>
-    <br>
-    <br>
+<br>
 <div class="aba">
+
 
 
 
@@ -20,7 +20,9 @@
     <div>
         <a class="modal-open" href="#modal{{projeto.nome_do_projeto}}">
             <div><img src="{{projeto.imagem.url}}" alt=""></div>
-            <div><h3>{{projeto.nome_do_projeto}}</h3><p>{{projeto.ano_realizacao}}  {% if projeto.linguagens != '' %}|{{projeto.linguagens}}{%endif%}</p></div>
+            <div><h3>{{projeto.nome_do_projeto}}</h3>
+                <p>{{projeto.ano_realizacao}} {% if projeto.linguagens != '' %}|{{projeto.linguagens}}{%endif%}</p>
+            </div>
         </a>
         <div class="modal" id="modal{{projeto.nome_do_projeto}}">
             <div class="modal-content">
@@ -39,14 +41,14 @@
                     <p class="cadeira"> Cadeira:<a href="licenciatura#{{projeto.cadeira}}"> {{projeto.cadeira}} </a></p>
                     {%endif%}
 
-                    <p class="git"><a  href="{{projeto.link_github}}">Github do projeto</a></p>
-                   <p  class="participante"> Participantes: {% for participante in projeto.participantes.all %}
+                    <p class="git"><a href="{{projeto.link_github}}">Github do projeto</a></p>
+                    <p class="participante"> Participantes: {% for participante in projeto.participantes.all %}
                         {%if participante.nome == 'Sozinho' %}
-                                João Eleutério
+                        João Eleutério
                         {%else%}
-                       , {{participante.nome}}
+                        , {{participante.nome}}
                         {%endif%}
-                       {%endfor%}</p>
+                        {%endfor%}</p>
                     {% if projeto.linguagens != '' %}
                     <p class="linguagens">Linguagens Usadas: {{projeto.linguagens}}</p>
                     {%endif%}

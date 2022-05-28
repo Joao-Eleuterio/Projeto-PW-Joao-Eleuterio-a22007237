@@ -143,6 +143,11 @@ CLOUDINARY_STORAGE = {
   'API_KEY': "935988236628896",
   'API_SECRET': "3DOtbD6_vdLOZbtCzIPrJqvq2rk",
 }
+CLOUDINARY_STORAGE = {
+  'CLOUD_NAME': "joaoeleuterio",
+  'API_KEY': "222161335646556",
+  'API_SECRET': "Zc-b3uHN_dZTPIphHDsdzR3NZPc",
+}
 
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))   # novo

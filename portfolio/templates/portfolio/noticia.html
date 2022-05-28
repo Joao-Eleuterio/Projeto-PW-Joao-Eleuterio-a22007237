@@ -7,6 +7,11 @@
 
 {% endblock style %}
 {% block main %}<h1 class="Titulo">Noticias</h1>
+<br>
+<br>
+    {% if request.user.is_authenticated %}
+      <div style="margin-left:45%;" class="btnNovaTarefa"><a href="{% url 'portfolio:novaNoticia' %}" class="btn btn-success btn-block">+ Nova Noticia</a></div><br><br>
+    {% endif %}
 <div class="container">
 
     {%for noticia in noticias %}
