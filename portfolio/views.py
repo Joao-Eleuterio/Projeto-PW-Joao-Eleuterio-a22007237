@@ -86,7 +86,7 @@ def apaga_Post_view(request, post_id):
     return HttpResponseRedirect(reverse('portfolio:blog'))
 
 
-@login_required
+
 def sobreOWebsite_page_view(request):
     context = {'tecnologias': Tecnologias.objects.all()}
     return render(request, 'portfolio/sobreOWebsite.html', context)
