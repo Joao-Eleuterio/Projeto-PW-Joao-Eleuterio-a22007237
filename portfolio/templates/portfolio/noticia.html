@@ -7,35 +7,36 @@
 
 {% endblock style %}
 {% block main %}
- <form method = "post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
 
 
-<h1 class="Titulo">Noticias</h1>
-<br>
-<br>
+    <h1 class="Titulo">Noticias</h1>
+    <br>
+    <br>
     {% if request.user.is_authenticated %}
-      <div class="btnNovaTarefa"><a href="{% url 'portfolio:novaNoticia' %}" class="btn btn-success btn-block">+ Nova Noticia</a></div>
-     {% endif %}
-<div class="container">
+    <div class="btnNovaTarefa"><a href="{% url 'portfolio:novaNoticia' %}" class="btn btn-success btn-block">+ Nova
+        Noticia</a></div>
+    {% endif %}
+    <div class="container">
 
-    {%for noticia in noticias %}
+        {%for noticia in noticias %}
 
-    <div class="noticia">
-        <h1>{{noticia.titulo}}</h1>
-        {%if noticia.image != None %}
-        <div style="margin-top:4%;">{% load static %}
-            <img src="{{noticia.imagem.url}}">
+        <div class="noticia">
+            <h1>{{noticia.titulo}}</h1>
+            {{noticia.imagem.url}
+
+            <div style="margin-top:4%;">{% load static %}
+                <img src="{{noticia.image.url}}">
+            </div>
+            <div style="margin-left:45%; ">
+                <p>Descrição: {{noticia.descricao}}</p>
+                <br>
+                <br>
+                Link: {{noticia.link}}
+            </div>
         </div>
-        {%endif%}
-        <div style="margin-left:45%; ">
-            <p>Descrição: {{noticia.descricao}}</p>
-            <br>
-            <br>
-            Link: {{noticia.link}}
-        </div>
+        {%endfor%}
     </div>
-    {%endfor%}
-</div>
 
- </form>
+</form>
 {% endblock main %}
