@@ -17,7 +17,9 @@
 
     <div>
         <a class="modal-open" href="#modal{{projeto.nome_do_projeto}}">
-            <div><img src="{{projeto.imagem.url}}" alt=""></div>
+
+            <div>{% load static %}
+                <img src="{{projeto.imagem.url}}" alt=""></div>
             <div><h3>{{projeto.nome_do_projeto}}</h3>
                 <p>{{projeto.ano_realizacao}} {% if projeto.linguagens != '' %}|{{projeto.linguagens}}{%endif%}</p>
             </div>
@@ -30,10 +32,9 @@
 
                     <div class="foto">
                         <a>
-
-                            <img src="{{projeto.imagemGrande.url}}" width=100 height=100>
-
-                            <img src="{{projeto.gif.url}}" width=100 height=100>
+                            {% load static %}
+                            <img src="{{projeto.imagemGrande.url}}" alt="imagem do projeto">
+                            <img src="{{projeto.gif.url}}" alt="gif de utilização">
                         </a>
                     </div>
                     <p class="descricao"> {{projeto.descricao}} </p>
