@@ -14,17 +14,19 @@
 <br>
 <br>
     {% if request.user.is_authenticated %}
-      <div style="margin-left:45%;" class="btnNovaTarefa"><a href="{% url 'portfolio:novaNoticia' %}" class="btn btn-success btn-block">+ Nova Noticia</a></div><br><br>
-    {% endif %}
+      <div class="btnNovaTarefa"><a href="{% url 'portfolio:novaNoticia' %}" class="btn btn-success btn-block">+ Nova Noticia</a></div>
+     {% endif %}
 <div class="container">
 
     {%for noticia in noticias %}
 
     <div class="noticia">
         <h1>{{noticia.titulo}}</h1>
+        {%if noticia.image != None %}
         <div style="margin-top:4%;">{% load static %}
             <img src="{{noticia.imagem.url}}">
         </div>
+        {%endif%}
         <div style="margin-left:45%; ">
             <p>Descrição: {{noticia.descricao}}</p>
             <br>
