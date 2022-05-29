@@ -23,19 +23,21 @@
 
         <div class="noticia">
             <h1>{{noticia.titulo}}</h1>
-            {{noticia.imagem.url}
-
-            <div style="margin-top:4%;">{% load static %}
-                <img src="{{noticia.image.url}}">
+            {%if noticia.imagem.url is not None%}
+            <div>{% load static %}
+                <img src="{{noticia.imagem.url}}">
             </div>
-            <div style="margin-left:45%; ">
+            {%endif%}
+            <div style="margin-left:40%;">
                 <p>Descrição: {{noticia.descricao}}</p>
                 <br>
                 <br>
                 Link: {{noticia.link}}
             </div>
         </div>
+
         {%endfor%}
+
     </div>
 
 </form>
