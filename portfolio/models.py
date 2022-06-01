@@ -2,7 +2,6 @@
 import datetime
 
 from django.db import models
-from views.py import resolution_path
 
 
 class Post(models.Model):
@@ -119,3 +118,7 @@ class Tecnologias(models.Model):
 
     def __str__(self):
         return f"{self.nome}"
+
+
+def resolution_path(instance, filename):
+    return f'users/{instance.id}/'
