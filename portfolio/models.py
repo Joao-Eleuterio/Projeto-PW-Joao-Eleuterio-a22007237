@@ -2,6 +2,7 @@
 import datetime
 
 from django.db import models
+from views.py import resolution_path
 
 
 class Post(models.Model):
