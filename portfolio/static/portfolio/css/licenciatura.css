@@ -7,7 +7,7 @@ body{background-color: rgb(230, 230, 230);}
 }
 .container div  div {
   float:left;
-  width:16%;
+  width:15%;
   height:auto; min-height:250px;
   padding:2%;
   margin: 0.5%;
@@ -16,7 +16,7 @@ body{background-color: rgb(230, 230, 230);}
   box-shadow: 5px 5px 15px grey; margin-bottom:60px;
 }
 
-.container div{ padding:4%; width:70%;margin-bottom:-5%;
+.container div{ padding:4%; width:75%;margin-bottom:-5%;
 }
 .semestre{
   width:auto;
