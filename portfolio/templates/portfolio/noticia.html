@@ -23,8 +23,8 @@
 
         <div class="noticia">
             <h1>{{noticia.titulo}}</h1>
-            {%if noticia.imagem.url is not None%}
-            <div>{% load static %}
+            {%if noticia.imagem.url !=''%}
+            <div>
                 <img src="{{noticia.imagem.url}}">
             </div>
             {%endif%}
