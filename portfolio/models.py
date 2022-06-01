@@ -121,4 +121,4 @@ class Tecnologias(models.Model):
 
 
 def resolution_path(instance, filename):
-    return f'users/{instance.id}/'
+    return f'noticia/{instance.id}/'
