@@ -24,7 +24,7 @@
 
         <div class="noticia">
             <h1>{{noticia.titulo}}</h1>
-            {%if noticia.imagem.url !=''%}
+            {%if noticia.imagem.url is not None%}
             <div>
                 <img src="{{noticia.imagem.url}}">
             </div>
