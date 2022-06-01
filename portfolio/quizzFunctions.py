@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-def informacao_sobre_utilizadores(objetos):
+def informacao_utilizadores(objetos):
     dados = {}
     for quizz in objetos:
         dados[quizz.nome] = QuizzPontuacao(quizz)
@@ -11,7 +11,7 @@ def informacao_sobre_utilizadores(objetos):
 
 def desenha_grafico_resultados(objetos):
     # creating the dataset
-    dados = informacao_sobre_utilizadores(objetos)
+    dados = informacao_utilizadores(objetos)
     dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
     pessoas = list(dados.keys())
@@ -25,7 +25,7 @@ def desenha_grafico_resultados(objetos):
     plt.title("Pontuação dos participantes!")
     plt.xlabel("Nome dos participantes")
     plt.ylabel("Pontuação")
-    plt.savefig('../media/grafico_final.png')
+    plt.savefig('portfolio/static/portfolio/images/grafico_final.png')
 
 
 def QuizzPontuacao(input):
