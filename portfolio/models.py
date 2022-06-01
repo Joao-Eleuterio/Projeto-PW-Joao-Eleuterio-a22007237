@@ -118,3 +118,7 @@ class Tecnologias(models.Model):
 
     def __str__(self):
         return f"{self.nome}"
+
+
+def resolution_path(instance, filename):
+    return f'users/{instance.id}/'

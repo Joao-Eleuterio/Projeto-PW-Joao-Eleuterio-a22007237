@@ -150,7 +150,4 @@ def logout_page_view(request):
     return render(request, 'portfolio/login.html')
 
 
-def resolution_path(instance, filename):
-    return f'users/{instance.id}/'
-
 
