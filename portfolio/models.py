@@ -4,6 +4,10 @@ import datetime
 from django.db import models
 
 
+def resolution_path(instance, filename):
+    return f'noticia/{instance.id}/'
+
+
 class Post(models.Model):
     autor = models.CharField(max_length=100)
     data = models.DateTimeField(auto_now_add=True)
@@ -120,5 +124,4 @@ class Tecnologias(models.Model):
         return f"{self.nome}"
 
 
-def resolution_path(instance, filename):
-    return f'noticia/{instance.id}/'
+
