@@ -111,7 +111,7 @@ def nova_Noticia_view(request):
 @login_required
 def edita_Noticia_view(request, noticia_id):
     noticia = Noticia.objects.get(id=noticia_id)
-    form = ProjetosForm(request.POST or None, instance=noticia)
+    form = NoticiaForm(request.POST or None, instance=noticia)
 
     if form.is_valid():
         form.save()
