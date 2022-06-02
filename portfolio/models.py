@@ -76,7 +76,7 @@ class Formacao(models.Model):
     nome_escola = models.CharField(max_length=100)
     link_escola = models.URLField(max_length=200, blank=True)
     curso = models.CharField(max_length=150)
-    descricao = models.CharField(max_length=300)
+    descricao = models.CharField(max_length=10000)
 
     def __str__(self):
         return f"{self.sigla}"

@@ -37,10 +37,8 @@ def certificados_page_view(request):
 
 
 def quizz_page_view(request):
-    desenha_grafico_resultados(Quizz.objects.all())
-
     form = QuizzForm(request.POST, use_required_attribute=False)
-
+    desenha_grafico_resultados(Quizz.objects.all())
     if form.is_valid():
         form.save()
         return HttpResponseRedirect(request.path_info)
@@ -148,6 +146,3 @@ def login_page_view(request):
 def logout_page_view(request):
     logout(request)
     return render(request, 'portfolio/login.html')
-
-
-
