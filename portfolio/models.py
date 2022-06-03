@@ -2,7 +2,6 @@
 import datetime
 
 from django.db import models
-from cloudinary.models import CloudinaryField
 
 
 class Post(models.Model):
@@ -102,7 +101,7 @@ class Noticia(models.Model):
     titulo = models.CharField(max_length=100)
     descricao = models.CharField(max_length=500)
     link = models.URLField(max_length=200, blank=True)
-    imagem = CloudinaryField(upload_to='noticia/', null=True, blank=True)
+    imagem = models.ImageField(upload_to='noticia/', null=True, blank=True)
 
     def __str__(self):
         return f"{self.titulo}"
