@@ -41,14 +41,12 @@ def certificados_page_view(request):
 
 
 def quizz_page_view(request):
-    if request.method == 'POST':
-        form = QuizzForm(request.POST, use_required_attribute=False)
-        desenha_grafico_resultados(Quizz.objects.all())
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('portfolio:quizz')
+    form = QuizzForm(request.POST, use_required_attribute=False)
+    desenha_grafico_resultados(Quizz.objects.all())
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(request.path_info)
 
-    form = QuizzForm()
     context = {'form': form}
     return render(request, 'portfolio/quizz.html', context)
 
