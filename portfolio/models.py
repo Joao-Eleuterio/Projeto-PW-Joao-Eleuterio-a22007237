@@ -22,7 +22,6 @@ class Quizz(models.Model):
     pergunta3 = models.IntegerField(default=0)  # Em que ano foi criado o Django? (2005)
     pergunta4 = models.IntegerField(default=0)  # Em que ano foi criado o HTML? (1991)
     pergunta5 = models.CharField(max_length=50)  # O que significa CSS (cascading style sheet)
-    imagem = models.ImageField(upload_to='media', blank=True, null=True)
 
     def __str__(self):
         return f"{self.nome}"
