@@ -1,3 +1,7 @@
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+
 main{background-color:rgb(30, 133, 255);}
 .heroPage{
   background-repeat: no-repeat;
@@ -55,19 +59,17 @@ article {
 }
 
 
-.SobreMim,.projetos, .web, .blog, .contacto{
+.projetos, .web, .blog, .contacto{
   /* The image used */
   background-image: url("../images/black.jpg");
   height:90vh;
 }
-.SobreMim article ,.projetos article, .web article, .blog article, .contacto article{
+.projetos article, .web article, .blog article, .contacto article{
   /* The image used */
   background-color:red;
   opacity:50%;
 height:90vh;
 }
-
-
 
 /* fallback */
 @font-face {
@@ -80,6 +82,25 @@ height:90vh;
   float:right;
   font-size:200%;
 }
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
 
-
-
+}
+.one {
+  background: #efdefe;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}

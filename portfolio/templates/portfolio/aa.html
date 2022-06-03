@@ -1,0 +1,20 @@
+{% extends 'portfolio/layout.html' %}
+
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/aa.css' %}"/>
+
+{% endblock style %}
+
+
+{% block main %}
+<div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one"></div>
+        <div class="slide two"></div>
+        <div class="slide three"></div>
+        <div class="slide four"></div>
+      </div>
+    </div>
+{% endblock main %}

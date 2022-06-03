@@ -2,6 +2,7 @@
 import datetime
 
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class Post(models.Model):
@@ -38,9 +39,9 @@ class Pessoa(models.Model):
 
 class Projetos(models.Model):
     nome_do_projeto = models.CharField(max_length=100)
-    imagem = models.ImageField(upload_to='media/', null=True)
-    imagemGrande = models.ImageField(upload_to='media/', null=True)
-    gif = models.ImageField(upload_to='media/', null=True)
+    imagem = models.ImageField(upload_to='projeto/', null=True)
+    imagemGrande = models.ImageField(upload_to='projeto/', null=True)
+    gif = models.ImageField(upload_to='projeto/', null=True)
     descricao = models.CharField(max_length=500)
     cadeira = models.CharField(max_length=100)
     ano_realizacao = models.IntegerField(default=0)
@@ -90,7 +91,7 @@ class Licenciatura(models.Model):
 
 class Certificado(models.Model):
     nome = models.CharField(max_length=100)
-    imagem = models.ImageField(upload_to='media/', null=True)
+    imagem = models.ImageField(upload_to='certificado/', null=True)
     formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE, default=0)
 
     def __str__(self):
@@ -101,7 +102,7 @@ class Noticia(models.Model):
     titulo = models.CharField(max_length=100)
     descricao = models.CharField(max_length=500)
     link = models.URLField(max_length=200, blank=True)
-    imagem = models.ImageField(upload_to='portfolio/media/', null=True, blank=True)
+    imagem = CloudinaryField(upload_to='noticia/', null=True, blank=True)
 
     def __str__(self):
         return f"{self.titulo}"
@@ -112,7 +113,7 @@ class Tecnologias(models.Model):
     acronimo = models.CharField(max_length=20)
     ano_criacao = models.IntegerField(default=0)
     criador = models.CharField(max_length=100)
-    logotipo = models.ImageField(upload_to='media/', null=True)
+    logotipo = models.ImageField(upload_to='tecnologia/', null=True)
     link = models.URLField(max_length=200, blank=True)
     descricao = models.CharField(max_length=400)
 

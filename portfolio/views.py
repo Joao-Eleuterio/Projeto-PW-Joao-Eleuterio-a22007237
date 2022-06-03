@@ -15,6 +15,10 @@ def home_page_view(request):
     return render(request, 'portfolio/home.html')
 
 
+def aa_page_view(request):
+    return render(request, 'portfolio/aa.html')
+
+
 def licenciatura_page_view(request):
     context = {'licenciatura': Licenciatura.objects.all(), "data": [1, 2, 3, 4, 5]}
     return render(request, 'portfolio/licenciatura.html', context)
@@ -90,18 +94,18 @@ def sobreWebsite_page_view(request):
 
 def noticia_page_view(request):
     context = {'noticias': Noticia.objects.all()}
-
     return render(request, 'portfolio/noticia.html', context)
 
 
 @login_required
 def nova_Noticia_view(request):
-    form = NoticiaForm(request.POST or None)
+    if request.method == 'POST':
+        form = NoticiaForm(request.POST or None, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('portfolio:noticia'))
 
-    if form.is_valid():
-        form.save()
-        return HttpResponseRedirect(reverse('portfolio:noticia'))
-
+    form = NoticiaForm()
     context = {'form': form}
     return render(request, 'portfolio/novaNoticia.html', context)
 
