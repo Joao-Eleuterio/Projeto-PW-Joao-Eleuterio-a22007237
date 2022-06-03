@@ -48,6 +48,7 @@ def quizz_page_view(request):
         return HttpResponseRedirect(request.path_info)
 
     context = {'form': form}
+
     return render(request, 'portfolio/quizz.html', context)
 
 
