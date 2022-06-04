@@ -9,8 +9,8 @@
 {% load static %}
 {% block main %}
 <h1 class="titulo">Quizz</h1>
-    <br>
-    <br>
+<br>
+<br>
 <div class="container">
 
 
@@ -21,9 +21,13 @@
             <input type="submit" value="Submit" class="btn">
         </form>
     </div>
+    {% endblock %}
+    {% block section %}
 
+    <p><img src="data:image/png;base64,{{ data }}" alt=""></p>
+    <h3>Gráfico de prioridades das tarefas</h3>
     <div class="graficos">
-         {% load static %}
+        {% load static %}
         <img src="grafico:image/png;base64,{{ grafico }}" alt="">
     </div>
 
