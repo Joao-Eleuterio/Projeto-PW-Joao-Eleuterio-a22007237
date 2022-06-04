@@ -31,7 +31,7 @@ def desenha_grafico_resultados(objetos):
     plt.title("Pontuação dos participantes!")
     plt.xlabel("Nome dos participantes")
     plt.ylabel("Pontuação")
-
+    plt.savefig(upload_to='media')
     fig = plt.gcf()
     plt.close()
 
