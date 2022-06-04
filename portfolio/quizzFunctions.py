@@ -1,4 +1,8 @@
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+import io
+import urllib, base64
+import matplotlib
+matplotlib.use('Agg')
 
 
 def informacao_utilizadores(objetos):
@@ -22,11 +26,22 @@ def desenha_grafico_resultados(objetos):
     # creating the bar plot
     plt.plot(pessoas, pontuacoes)
 
+    plt.barh(pessoas, pontuacoes)
+    plt.ylabel("Pontuação")
+    plt.autoscale()
     plt.title("Pontuação dos participantes!")
     plt.xlabel("Nome dos participantes")
-    plt.ylabel("Pontuação")
-    plt.savefig('portfolio/static/portfolio/images/grafico_final.png')
+
+    fig = plt.gcf()
     plt.close()
+
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+
+    return uri
 
 
 def QuizzPontuacao(input):

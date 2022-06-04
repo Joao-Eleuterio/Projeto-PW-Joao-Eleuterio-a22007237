@@ -16,7 +16,7 @@ def home_page_view(request):
 
 
 def aa_page_view(request):
-    return render(request, 'portfolio/aa.html')
+    return render(request, 'portfolio/ab.html')
 
 
 def licenciatura_page_view(request):
@@ -43,12 +43,13 @@ def certificados_page_view(request):
 def quizz_page_view(request):
     form = QuizzForm(request.POST, use_required_attribute=False)
     desenha_grafico_resultados(Quizz.objects.all())
-    desenha_grafico_resultados(Quizz.objects.all())
+
     if form.is_valid():
         form.save()
         return HttpResponseRedirect('portfolio:quizz')
 
-    context = {'form': form}
+    context = {'form': form,
+               'grafico': desenha_grafico_resultados()}
 
     return render(request, 'portfolio/quizz.html', context)
 
