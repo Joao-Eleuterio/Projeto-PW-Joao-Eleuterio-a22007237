@@ -2,6 +2,7 @@ from matplotlib import pyplot as plt
 import io
 import urllib, base64
 import matplotlib
+
 matplotlib.use('Agg')
 
 
@@ -23,14 +24,11 @@ def desenha_grafico_resultados(objetos):
 
     plt.figure(figsize=(10, 5))
 
-    # creating the bar plot
-    plt.plot(pessoas, pontuacoes)
-
     plt.barh(pessoas, pontuacoes)
-    plt.ylabel("Pontuação")
     plt.autoscale()
     plt.title("Pontuação dos participantes!")
     plt.xlabel("Nome dos participantes")
+    plt.ylabel("Pontuação")
 
     fig = plt.gcf()
     plt.close()

@@ -45,7 +45,7 @@ def quizz_page_view(request):
 
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect('portfolio:quizz')
+        return HttpResponseRedirect(reverse('portfolio:quizz'))
 
     context = {'form': form,
                'grafico': desenha_grafico_resultados(Quizz.objects.all())}
