@@ -80,19 +80,3 @@ height:90vh;
   font-size:200%;
 }
 
-.ab{ overflow-x: hidden; /*or overflow-x:scroll */
-  display: flex;}
-.ab section {
-   min-width: 50vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 4ch;
-}
-
-.ab section:nth-child(even) {
-  background-color: teal;
-  color: white;
-}
-
