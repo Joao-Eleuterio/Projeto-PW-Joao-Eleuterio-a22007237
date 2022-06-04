@@ -1,7 +1,9 @@
-from matplotlib import pyplot as plt
+import base64
 import io
-import urllib, base64
+import urllib
+
 import matplotlib
+from matplotlib import pyplot as plt
 
 matplotlib.use('Agg')
 

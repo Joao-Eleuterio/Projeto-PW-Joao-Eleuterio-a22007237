@@ -23,12 +23,8 @@
     </div>
     {% endblock %}
     {% block section %}
-
-    <p><img src="data:image/png;base64,{{ data }}" alt=""></p>
-    <h3>Gráfico de prioridades das tarefas</h3>
     <div class="graficos">
-        {% load static %}
-        <img src="grafico:image/png;base64,{{ grafico }}" alt="">
+        <p><img src="grafico:image/png;base64,{{ grafico }}" alt=""></p>
     </div>
 
 
