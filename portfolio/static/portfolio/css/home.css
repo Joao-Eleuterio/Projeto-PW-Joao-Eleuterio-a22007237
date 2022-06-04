@@ -1,6 +1,7 @@
 
-main{background-color:rgb(30, 133, 255);}
-.heroPage{
+main{background-color:rgb(30, 133, 255); overflow-x:hidden;}
+
+.heroPage{margin-top:5%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,7 +17,8 @@ main{background-color:rgb(30, 133, 255);}
 }
 
 
-.FalarSobreMim{height:50vh;}
+.FalarSobreMim{height:auto;}
+
 .heroPage div>div{background-color:rgb(30, 133, 255, 0.5);width:35%;margin-left:32.5%;
 border-radius:30px;}
 
@@ -56,16 +58,16 @@ article {
 }
 
 
-.projetos, .web, .blog, .contacto{
+.SobreMim, .projetos, .web, .blog, .contacto{
   /* The image used */
   background-image: url("../images/black.jpg");
   height:90vh;
 }
-.projetos article, .web article, .blog article, .contacto article{
+.SobreMim article, .projetos article, .web article, .blog article, .contacto article{
   /* The image used */
   background-color:red;
   opacity:50%;
-height:90vh;
+    height:90vh;
 }
 
 /* fallback */
@@ -78,5 +80,20 @@ height:90vh;
   font-family: 'Material Symbols Outlined';
   float:right;
   font-size:200%;
+}
+
+.contain{
+    display: grid;
+    flex-flow: row wrap;
+    grid-template-columns:1fr 1fr;
+    width:200%;
+      flex-direction: row;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+      }
+
+      ::-webkit-scrollbar {
+  display:none;
 }
 

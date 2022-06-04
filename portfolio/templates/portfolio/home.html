@@ -10,13 +10,12 @@
 
 {% block main %}
 <script>
-    const scrollContainer = document.querySelector(".ab");
+    const scrollContainer = document.querySelector(".contain");
 
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
 });
-
 </script>
 <div class="outer-wrapper">
     <div class="heroPage">
@@ -27,124 +26,108 @@ scrollContainer.addEventListener("wheel", (evt) => {
     <div class="parallax"></div>
     <div class="FalarSobreMim">
         <article>
-            <p>Skąd to wziąć?
-                Jest dostępnych wiele różnych wersji Lorem Ipsum, ale większość zmieniła się pod wpływem dodanego
-                humoru czy
-                przypadkowych słów, które nawet w najmniejszym stopniu nie przypominają istniejących. Jeśli masz
-                zamiar użyć
-                fragmentu Lorem Ipsum, lepiej mieć pewność, że nie ma niczego „dziwnego” w środku tekstu. Wszystkie
-                Internetowe generatory Lorem Ipsum mają tendencje do kopiowania już istniejących bloków, co czyni
-                nasz
-                pierwszym prawdziwym generatorem w Internecie. Używamy zawierającego ponad 200 łacińskich słów
-                słownika, w
-                kontekście wielu znanych sentencj.</p></article>
+            <p>Sou um jovem de 20 anos estudante Universitário.  <br>
+- Conclui um curso profissional no INETE nível IV - Técnico de Gestão e programação de Sistemas Informáticos; <br>
+- Frequência de uma formação na ANPRI - Introdução do desenvolvimento de jogos em Unity 3D; <br>
+- Atualmente a frequentar a licenciatura na Universidade Lusófona - Engenharia Informática.</p></article>
     </div>
     <div class="parallax"></div>
-    <div class="SobreMim">
-        <div>
-            <article><h2>Sobre Mim</h2>
+
+    <div class="contain">
+        <div class="SobreMim">
+            <div>
+                <article><h2>Sobre Mim</h2>
+                    <p>Do czego tego użyć?
+                        Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten
+                        chce
+                        zobaczyć
+                        sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych
+                        „kombinacji”
+                        zdań, słów
+                        i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to
+                        „zbyt
+                        czytelnie”
+
+                        <br>
+
+                        .de motivações para escolher o seu curso,<br>
+                        .daquilo que mais tem gostado de aprender no curso,<br>
+                        .de espectativas do que gostaria de fazer quando acabar o curso.<br>
+                        .de hobbies
+
+
+                        <!-- https://fonts.google.com/icons -->
+
+
+                    </p>
+                   <a href="#projetos"><button class="material-symbols-outlined">expand_circle_down</button></a>
+                </article>
+            </div>
+        </div>
+        <div  class="projetos">
+            <article><h2 id="projetos">Projetos</h2>
                 <p>Do czego tego użyć?
-                    Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten
-                    chce
+                    Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
                     zobaczyć
-                    sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych
-                    „kombinacji”
-                    zdań, słów
-                    i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to
-                    „zbyt
+                    sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
+                    zdań,
+                    słów
+                    i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
                     czytelnie”
-
-                    <br>
-
-                    .de motivações para escolher o seu curso,<br>
-                    .daquilo que mais tem gostado de aprender no curso,<br>
-                    .de espectativas do que gostaria de fazer quando acabar o curso.<br>
-                    .de hobbies
-
-
-                    <!-- https://fonts.google.com/icons -->
-
-
-                </p>
-                <div class="material-symbols-outlined">expand_circle_down</div>
+                    po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie
+                    w
+                    internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
+                    budowie.
+                    Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
+                    (humorystyczne wstawki itd).</p>
+                      <a href="#web"><button class="material-symbols-outlined">expand_circle_down</button></a>
             </article>
         </div>
     </div>
     <br>
-    <div class="projetos">
-        <article><h2>Projetos</h2>
-            <p>Do czego tego użyć?
-                Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
-                zobaczyć
-                sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
-                zdań,
-                słów
-                i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
-                czytelnie”
-                po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w
-                internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
-                budowie.
-                Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
-                (humorystyczne wstawki itd).</p>
-        </article>
+    <div class="contain"><div id="blog"  class="blog">
+            <article><h2 >Blog</h2>
+                <p>Do czego tego użyć?
+                    Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
+                    zobaczyć
+                    sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
+                    zdań,
+                    słów
+                    i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
+                    czytelnie”
+                    po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie
+                    w
+                    internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
+                    budowie.
+                    Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
+                    (humorystyczne wstawki itd).</p>
+                <a href="#contacto"><button class="material-symbols-outlined">expand_circle_down</button></a>
+            </article>
+        </div>
+        <div  class="web">
+            <article><h2 id="web">Web</h2>
+                <p>Do czego tego użyć?
+                    Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
+                    zobaczyć
+                    sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
+                    zdań,
+                    słów
+                    i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
+                    czytelnie”
+                    po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie
+                    w
+                    internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
+                    budowie.
+                    Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
+                    (humorystyczne wstawki itd).</p>
+                <a href="#blog"><button class="material-symbols-outlined">expand_circle_down</button></a>
+            </article>
+        </div>
+
     </div>
     <br>
-    <div class="projetos">
-        <article><h2>Projetos</h2>
-            <p>Do czego tego użyć?
-                Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
-                zobaczyć
-                sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
-                zdań,
-                słów
-                i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
-                czytelnie”
-                po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w
-                internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
-                budowie.
-                Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
-                (humorystyczne wstawki itd).</p>
-        </article>
-    </div>
-    <br>
-    <div class="web">
-        <article><h2>Web</h2>
-            <p>Do czego tego użyć?
-                Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
-                zobaczyć
-                sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
-                zdań,
-                słów
-                i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
-                czytelnie”
-                po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w
-                internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
-                budowie.
-                Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
-                (humorystyczne wstawki itd).</p>
-        </article>
-    </div>
-    <br>
-    <div class="blog">
-        <article><h2>Blog</h2>
-            <p>Do czego tego użyć?
-                Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
-                zobaczyć
-                sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji”
-                zdań,
-                słów
-                i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt
-                czytelnie”
-                po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w
-                internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w
-                budowie.
-                Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie
-                (humorystyczne wstawki itd).</p>
-        </article>
-    </div>
-    <br>
-    <div class="contacto">
-        <article><h2>Contacto</h2>
+    <div   class="contacto">
+        <article><h2 id="contacto">Contacto</h2>
             <p>Do czego tego użyć?
                 Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce
                 zobaczyć
