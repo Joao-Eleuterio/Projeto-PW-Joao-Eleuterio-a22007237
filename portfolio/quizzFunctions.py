@@ -17,7 +17,7 @@ def informacao_utilizadores(objetos):
 
 
 def desenha_grafico_resultados(objetos):
-    dados = informacao_sobre_utilizadores(objetos)
+    dados = informacao_utilizadores(objetos)
 
     dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
