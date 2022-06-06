@@ -32,8 +32,9 @@ def desenha_grafico_resultados(objetos):
     plt.ylabel("Nome dos participantes")
     plt.xlabel("Pontuação")
 
-    plt.savefig('static/portfolio/images/grafico_quizz.png')
-    plt.savefig(upload_to='media')
+    plt.savefig('portfolio/static/portfolio/images/grafico_quizz.png')
+    plt.savefig(upload_to='media', fname='grafico_final')
+    plt.close()
 
 
 def QuizzPontuacao(input):

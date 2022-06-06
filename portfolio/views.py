@@ -37,7 +37,7 @@ def certificados_page_view(request):
 
 
 def quizz_page_view(request):
-    form = QuizzForm(request.POST, use_required_attribute=False)
+    form = QuizzForm(request.POST or None)
     desenha_grafico_resultados(Quizz.objects.all())
     if form.is_valid():
         form.save()
