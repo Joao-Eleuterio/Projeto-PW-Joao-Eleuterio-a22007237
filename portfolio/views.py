@@ -42,13 +42,13 @@ def quizz_page_view(request):
     context = {'form': form}
     if form.is_valid():
         form.save()
-        context += {'grafico': cria_grafico()}
+        context += {'grafico': cria_grafico(Quizz.objects.all())}
         return HttpResponseRedirect(reverse('portfolio:quizz', context))
 
     return render(request, 'portfolio/quizz.html', context)
 
 
-def cria_grafico():
+def cria_grafico(objeto):
     dados = informacao_utilizadores(objetos)
     dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
