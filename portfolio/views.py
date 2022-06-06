@@ -40,16 +40,18 @@ def certificados_page_view(request):
     return render(request, 'portfolio/certificados.html', context)
 
 
-def quizz_page_view(request):
-    form = QuizzForm(request.POST or None)
-    context = {
-            'tarefas': Tarefa.objects.all(),
-            'data': cria_grafico()
-        }
+def quizz_view(request):
+    desenha_grafico_resultados(Quizz.objects.all())
+
+    form = QuizzForm(request.POST, use_required_attribute=False)
+
     if form.is_valid():
         form.save()
+        return HttpResponseRedirect(request.path_info)
 
-        return HttpResponseRedirect(reverse('portfolio:quizz'),context)
+    context = {
+        'form': form,
+    }
 
     return render(request, 'portfolio/quizz.html', context)
 
