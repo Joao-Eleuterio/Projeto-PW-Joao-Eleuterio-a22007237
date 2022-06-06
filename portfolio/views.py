@@ -43,7 +43,7 @@ def quizz_page_view(request):
 
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('portfolio:quizz'))
+        return HttpResponseRedirect(request.path_info)
 
     context = {
         'form': form,
