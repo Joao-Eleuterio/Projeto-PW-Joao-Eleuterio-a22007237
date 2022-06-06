@@ -6,7 +6,6 @@ app_name = "portfolio"
 urlpatterns = [
     path('', views.home_page_view, name='home'),
     path('home', views.home_page_view, name='home'),
-    path('aa', views.aa_page_view, name='aa'),
     path('licenciatura', views.licenciatura_page_view, name='licenciatura'),
     path('projetos', views.projetos_page_view, name='projetos'),
     path('formacao', views.formacao_page_view, name='formacao'),

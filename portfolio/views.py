@@ -15,10 +15,6 @@ def home_page_view(request):
     return render(request, 'portfolio/home.html')
 
 
-def aa_page_view(request):
-    return render(request, 'portfolio/ab.html')
-
-
 def licenciatura_page_view(request):
     context = {'licenciatura': Licenciatura.objects.all(), "data": [1, 2, 3, 4, 5]}
     return render(request, 'portfolio/licenciatura.html', context)
@@ -40,7 +36,7 @@ def certificados_page_view(request):
     return render(request, 'portfolio/certificados.html', context)
 
 
-def quizz_view(request):
+def quizz_page_view(request):
     desenha_grafico_resultados(Quizz.objects.all())
 
     form = QuizzForm(request.POST, use_required_attribute=False)
