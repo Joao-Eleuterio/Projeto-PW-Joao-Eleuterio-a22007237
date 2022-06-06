@@ -49,7 +49,7 @@ def quizz_page_view(request):
 
 
 def cria_grafico(objeto):
-    dados = informacao_utilizadores(objetos)
+    dados = informacao_utilizadores(objeto)
     dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
     pessoa = list(dados.keys())
