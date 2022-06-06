@@ -27,6 +27,9 @@ class QuizzForm(ModelForm):
         model = Quizz
         fields = '__all__'
 
+        widgets = {
+            'nome': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Insira o seu nome'}),
+        }
         labels = {
 
             'nome': 'Qual o seu nome?',
