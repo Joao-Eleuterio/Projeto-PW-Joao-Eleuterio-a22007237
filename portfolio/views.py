@@ -66,7 +66,7 @@ def cria_grafico(objeto):
 
     buf = io.BytesIO()
     fig.savefig(buf, format='png')
-
+    fig.savefig(upload_to='media', name='grafico_final')
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
