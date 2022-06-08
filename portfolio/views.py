@@ -37,15 +37,43 @@ def certificados_page_view(request):
 
 
 def quizz_page_view(request):
-    form = QuizzForm(request.POST or None)
-    desenha_grafico_resultados(Quizz.objects.all())
+    form = TarefaForm(request.POST or None)
     if form.is_valid():
+        context = {'form': form, 'grafico': cria_grafico()}
         form.save()
-        return HttpResponseRedirect(request.path_info)
+        return HttpResponseRedirect(reverse('portfolio:quizz'), context)
 
     context = {'form': form}
 
     return render(request, 'portfolio/quizz.html', context)
+
+
+def cria_grafico(objetos):
+    dados = informacao_utilizadores(objetos)
+
+    dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
+
+    pessoa = list(dados.keys())
+    pontuacao = list(dados.values())
+
+    plt.figure(figsize=(13, 5))
+    plt.barh(pessoa, pontuacao)
+    plt.title("Pontuação dos participantes!")
+    plt.ylabel("Nome dos participantes")
+    plt.xlabel("Pontuação")
+    plt.autoscale()
+
+    fig = plt.gcf()
+    plt.close()
+
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+
+    buf.seek(0)
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+
+    return uri
 
 
 def blog_page_view(request):
