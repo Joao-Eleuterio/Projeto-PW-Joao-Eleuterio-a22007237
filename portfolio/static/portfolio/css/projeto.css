@@ -151,3 +151,26 @@ gap:20px;
  color:white;  }
 
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+.container div  div {
+  float:left;
+
+  height:auto; min-height:250px;
+  padding:2%;
+  margin: 0.5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey; margin-bottom:60px;
+}
+
+.container div{ padding:4%; width:75%;margin-bottom:-5%;
+}
+
+
+img{width:300px;}
+p{word-wrap: break-word;}

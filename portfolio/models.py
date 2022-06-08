@@ -124,4 +124,16 @@ class Tecnologias(models.Model):
         return f"{self.nome}"
 
 
+class TFC(models.Model):
+    autores = models.ForeignKey(Pessoa, on_delete=models.CASCADE, default=0, related_name='portfolio.TFC.autores+')
+    orientadores = models.ManyToManyField(Pessoa, related_name='portfolio.TFC.orientadores+')
+    ano = models.IntegerField(default=0)
+    titulo = models.CharField(max_length=50)
+    resumo = models.CharField(max_length=500)
+    imagem = models.ImageField(upload_to='media/', null=True)
+    relatorio = models.URLField(max_length=200, blank=True)
+    github = models.URLField(max_length=200, blank=True)
+    video_demonstrativo = models.URLField(max_length=200, blank=True)
 
+    def __str__(self):
+        return f"{self.autores}"

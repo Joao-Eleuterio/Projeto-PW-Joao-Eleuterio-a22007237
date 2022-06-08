@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 from django import forms
-from .models import Quizz, Projetos, Licenciatura, Cadeira, Noticia, Post
+from .models import Quizz, Projetos, Licenciatura, Cadeira, Noticia, Post, TFC
 
 
 class PostForm(ModelForm):
@@ -152,3 +152,10 @@ class NoticiaForm(ModelForm):
         help_texts = {
 
         }
+
+
+class TFCForm(ModelForm):
+    class Meta:
+        model = TFC
+        fields = '__all__'
+

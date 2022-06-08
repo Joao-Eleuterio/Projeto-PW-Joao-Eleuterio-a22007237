@@ -6,7 +6,7 @@ from django.urls import reverse
 
 # Create your views here.
 from .forms import PostForm, QuizzForm, ProjetosForm, NoticiaForm
-from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Pessoa, Noticia, Tecnologias
+from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Pessoa, Noticia, Tecnologias, TFC
 from .quizzFunctions import desenha_grafico_resultados
 from django.contrib.auth.decorators import login_required
 
@@ -21,7 +21,7 @@ def licenciatura_page_view(request):
 
 
 def projetos_page_view(request):
-    context = {'projetos': Projetos.objects.all(), 'pessoa': Projetos.participantes}
+    context = {'projetos': Projetos.objects.all(), 'pessoa': Projetos.participantes, 'TFC': TFC.objects.all()}
 
     return render(request, 'portfolio/projetos.html', context)
 
