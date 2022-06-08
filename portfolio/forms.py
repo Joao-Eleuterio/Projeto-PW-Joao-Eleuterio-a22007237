@@ -159,3 +159,15 @@ class TFCForm(ModelForm):
         model = TFC
         fields = '__all__'
 
+
+
+    labels = {
+        'autores': 'Autor',
+        'orientadores': 'Orientadores',
+        'titulo': 'Titulo',
+        'resumo': 'Resumo',
+        'imagem': 'Imagem',
+        'relatorio': 'Relatório',
+        'github': 'GitHub',
+        'video_demonstrativo': 'Video Demonstrativo',
+    }

@@ -65,59 +65,59 @@
     {%endfor%}
 </div><br><br><h1 class="titulo">Trabalho Final de Curso</h1>
 
-    <div class="container">
+<div class="container">
 
-        {% for tfcs in TFC %}
+    {% for tfcs in TFC %}
+    <div>
         <div>
-            <div>
-                <h3 style="text-align:center;">{{tfcs.titulo}}</h3>
+            <h3 style="text-align:center;">{{tfcs.titulo}}</h3>
 
-                <br>
-<br>
-                    {% load static %}
-                    <img src="{{tfcs.imagem.url}}" alt="" width="300px">
+            <br>
+            <br>
+            {% load static %}
+            <img src="{{tfcs.imagem.url}}" alt="" width="300px">
 
-                <br><br>
-                <p>
-                    <span> Resumo: </span>
-                    {{tfcs.resumo}}
-                </p>
+            <br><br>
+            <p>
+                <span> Resumo: </span>
+                {{tfcs.resumo}}
+            </p>
 
-                <br>
+            <br>
 
-                <p>Relatório: <a href="{{tfcs.relatorio}}"> Click here </a></p>
+            <p>Relatório: <a href="{{tfcs.relatorio}}"> Click here </a></p>
 
-                <br>
+            <br>
 
-                <p>Ano de realização:{{tfcs.ano}}</p>
+            <p>Ano de realização:{{tfcs.ano}}</p>
 
-                <br>
+            <br>
 
-                <p>Autores: {{ tfcs.autores }} </p>
+            <p>Autores: {{ tfcs.autores }} </p>
 
-                <br>
-                Orientadores:
-                {% for tfc_orientadores in tfcs.orientadores.all %}
-                <p class="tabNomes">{{ tfc_orientadores }} </p>
+            <br>
+            Orientadores:
+            {% for tfc_orientadores in tfcs.orientadores.all %}
+            <p class="tabNomes">{{ tfc_orientadores }} </p>
 
-                {% endfor %}
+            {% endfor %}
 
 
-                <br>
+            <br>
 
-                <p><span> GitHub: <a href="{{tfcs.link_github}}" class="linkGitHub"> Click here </a> </span></p>
+            <p><span> GitHub: <a href="{{tfcs.link_github}}" class="linkGitHub"> Click here </a> </span></p>
 
-            </div>
         </div>
-        {% endfor %}
     </div>
-
-
-
-<!--   titulo, descrição até 500 caracteres, imagem, ano de realização,
-cadeira(classe Cadeira, caso tenha sido projeto associado a uma cadeira)
-participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin,
-e link para a aplicação portfolio do projeto PW),
-link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia) -->
+    {% endfor %}
+</div>
+<h1 class="titulo">Novo TFC</h1>
+<div class="containerNova">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ formTFC.as_p }}
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</div>
 
 {% endblock main %}
