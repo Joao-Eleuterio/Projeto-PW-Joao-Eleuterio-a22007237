@@ -152,10 +152,10 @@ gap:20px;
 
 
 .container {
-  display: flex;
+  display: grid;
   flex-flow: row wrap;
   justify-content: center;
-
+    grid-template-columns:1fr 1fr ;
 }
 .container div  div {
   float:left;

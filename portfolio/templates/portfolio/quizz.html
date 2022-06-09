@@ -18,11 +18,11 @@
         <form action="" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <input type="submit" value="Submit" class="btn">
+             <input type="submit" value="Gravar" class="btn">
         </form>
     </div>
     <div class="graficos">
-    <p><img src="grafico:image/png;base64,{{ grafico }}" alt=""></p>
+    <p><img src="data:image/png;base64,{{ data }}" alt=""></p>
 </div>
 </div>
 

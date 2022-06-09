@@ -45,8 +45,8 @@ def competencias_page_view(request):
 def quizz_page_view(request):
     form = QuizzForm(request.POST or None)
     if form.is_valid():
-        context = {'form': form, 'grafico': cria_grafico(Quizz.objects.all())}
         form.save()
+        context = {'data': cria_grafico(Quizz.objects.all())}
         return HttpResponseRedirect(reverse('portfolio:quizz', context))
 
     context = {'form': form}
