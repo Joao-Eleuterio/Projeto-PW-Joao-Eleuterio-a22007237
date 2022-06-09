@@ -44,9 +44,9 @@
             <li><a href="{% url 'portfolio:blog' %}">Blog</a></li>
         </ul>
         {% if not user.is_authenticated %}
-            <a href="{% url 'portfolio:login' %}" class="btn">Login</a>
+        <a href="{% url 'portfolio:login' %}" class="btn">Login</a>
         {%else%}
-            <a href="{% url 'portfolio:logout' %}" class="btnLogout">Logout</a>
+        <a href="{% url 'portfolio:logout' %}" class="btnLogout">Logout</a>
         {% endif %}
 
     </nav>
@@ -62,19 +62,46 @@
 
 
 <footer>
-    <div>ULHT - 2022 </div><div id="hour" onclick="myFunction()"></div>
+    <div>ULHT - 2022</div>
+    <div class="dropup">
+        <button style="width:100%;background-color:transparent;color:white;font-size:100%;" id="hour" onclick="myFunction()"></button>
+        <div class="dropup-content">
+            <button onclick="myFunction1()" style="width:100%;background-color:transparent;font-size:100%;">Lisboa</button>
+            <button onclick="myFunction()" style="width:100%;background-color:transparent;font-size:100%;">America</button>
+            <button onclick="myFunction2()" style="width:100%;background-color:transparent;font-size:100%;">Japão</button>
+        </div>
+    </div>
 
 </footer>
 <script>
-const time = document.getElementById('hour');
-
+const time = document.getElementById('hour'); var DATE;
+var d = 0;
 let watch = () => {
-    const DATE = new Date();
-    time.innerHTML = DATE.toLocaleTimeString();
-    //'en-US', { timeZone: 'America/New_York' }
-};
-const INTERVAL_ID = setInterval(watch, 1000);
+     switch(d) {
+        case 0:
+                DATE = new Date();time.innerHTML = DATE.toLocaleTimeString('it-IT', { timeZone: 'Portugal' });
+            break;
+        case 1:
+            DATE = new Date();
+            time.innerHTML = DATE.toLocaleTimeString('it-IT', { timeZone: 'America/New_York' });
+            break;
+        case 2:
+             DATE = new Date();
+            time.innerHTML = DATE.toLocaleTimeString('it-IT', { timeZone: 'Japan' });
+            break;
+        default:
+            alert('erro');
+  }
 
+};
+window.addEventListener('load', (event) =>{
+    d=0;
+});
+function myFunction(){d=1;}
+function myFunction1(){d=0;}
+function myFunction2(){d=2;}
+
+const INTERVAL_ID = setInterval(watch, 1000);
 </script>
 </body>
 </html>
