@@ -17,24 +17,31 @@ def informacao_utilizadores(objetos):
 
 
 def desenha_grafico_resultados(objetos):
+    # creating the dataset
     dados = informacao_utilizadores(objetos)
-
     dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
 
-    pessoa = list(dados.keys())
-    pontuacao = list(dados.values())
+    pessoas = list(dados.keys())
+    pontuacoes = list(dados.values())
 
-    plt.figure(figsize=(13, 5))
+    plt.figure(figsize=(10, 5))
 
-    plt.barh(pessoa, pontuacao)
-
+    plt.barh(pessoas, pontuacoes)
+    plt.autoscale()
     plt.title("Pontuação dos participantes!")
-    plt.ylabel("Nome dos participantes")
-    plt.xlabel("Pontuação")
+    plt.xlabel("Nome dos participantes")
+    plt.ylabel("Pontuação")
+    plt.savefig(upload_to='media')
+    fig = plt.gcf()
+    plt.close()
 
-    plt.savefig('portfolio/static/portfolio/images/grafico_quizz.png')
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+    buf.seek(0)
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
 
-    plt.close(plt)
+    return uri
 
 
 def QuizzPontuacao(input):

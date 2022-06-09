@@ -10,6 +10,7 @@ urlpatterns = [
     path('projetos', views.projetos_page_view, name='projetos'),
     path('formacao', views.formacao_page_view, name='formacao'),
     path('certificados', views.certificados_page_view, name='certificados'),
+    path('competencias', views.competencias_page_view, name='competencias'),
     path('quizz', views.quizz_page_view, name='quizz'),
     path('blog', views.blog_page_view, name='blog'),
     path('novablog/', views.nova_Post_view, name='novablog'),

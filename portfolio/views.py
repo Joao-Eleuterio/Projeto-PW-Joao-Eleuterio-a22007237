@@ -38,6 +38,10 @@ def certificados_page_view(request):
     return render(request, 'portfolio/certificados.html', context)
 
 
+def competencias_page_view(request):
+    return render(request, 'portfolio/competencias.html')
+
+
 def quizz_page_view(request):
     form = QuizzForm(request.POST or None)
     if form.is_valid():

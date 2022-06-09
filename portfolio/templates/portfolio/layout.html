@@ -21,18 +21,18 @@
         <h1 class="logo">João Eleutério</h1>
         <ul class="menu">
             <li><a href="{% url 'portfolio:home' %}">Home</a></li>
-            <li><a href="">Sobre mim</a>
+
+            <li><a href="home#SobreMim">Sobre Mim</a>
                 <ul>
                     <li><a href="{% url 'portfolio:licenciatura' %}">Licenciatura</a></li>
                     <li><a href="{% url 'portfolio:formacao' %}">Educação</a></li>
                     <li><a href="{% url 'portfolio:certificados' %}">Certificados</a></li>
-                    <li><a href="">Outras habilitações</a></li>
-                    <li><a href="">Aptidões e competências pessoais</a></li>
+                    <li><a href="{% url 'portfolio:competencias' %}">Aptidões e competências pessoais</a></li>
                     <li><a href="">Interesses e hobbies</a></li>
                 </ul>
             </li>
             <li><a href="{% url 'portfolio:projetos' %}">projetos</a></li>
-            <li><a href="">Web</a>
+            <li><a href="home#web">Web</a>
                 <ul>
                     <li><a href="{% url 'portfolio:sobreWebsite' %}">Sobre este website</a></li>
                     <li><a href="{% url 'portfolio:sobreWebsite' %}">tecnologias existentes</a></li>
@@ -62,10 +62,19 @@
 
 
 <footer>
-    <div>
-        ULHT - 2022
-    </div>
-</footer>
+    <div>ULHT - 2022 </div><div id="hour" onclick="myFunction()"></div>
 
+</footer>
+<script>
+const time = document.getElementById('hour');
+
+let watch = () => {
+    const DATE = new Date();
+    time.innerHTML = DATE.toLocaleTimeString();
+    //'en-US', { timeZone: 'America/New_York' }
+};
+const INTERVAL_ID = setInterval(watch, 1000);
+
+</script>
 </body>
 </html>

@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'portfolio/layout.html' %}
 
-</body>
-</html>
+{% block style %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/competencias.css' %}"/>
+
+{% endblock style %}
+
+
+{% block main %}
+<h1 class="titulo">João Eleutério</h1>
+<div class="container">
+    <div>
+            <h1 style="text-align:center;">Mais sobre mim</h1><br><br>
+            <img src="static/portfolio/images/Xadrez.png" class="imagem">
+            <div class="texto">
+                <div><p>Chamo-me João Eleutério. Sou estudante da Universidade Lusófona de Humanidades e
+                    Tecnologias da licenciatura de Engenharia Informática.(No momento 14 de média)<br>
+                    Conclui um curso profissional no INETE nível IV - Técnico de Gestão e programação de Sistemas Informáticos;(Com média de 14)
+                e Frequência de uma formação na ANPRI - Introdução do desenvolvimento de jogos em Unity 3D;<br>
+                No futuro irei seguir inteligência artificial</p></div>
+                <p>Tenho conhecimento das seguintes tecnologias:</p>
+                <ul class="tecnologias">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>SQL Server</li>
+                    <li>Aspx</li>
+                    <li>Kotlin</li>
+                    <li>Unity3D</li>
+                    <li>Office365</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>Arduino</li>
+                    <li>Vs Code</li>
+                    <li>Vs Studio</li>
+                    <li>Pycharm</li>
+                    <li>Intellij</li>
+                </ul>
+
+                <br>
+                <p>Idiomas:</p>
+                <ul>
+                    <li>Português - Nativo</li>
+                    <li>Inglês - Intermédio</li>
+                </ul>
+                <br>
+                <p>Hobbies/Interesses:</p>
+                <ul>
+                    <li>Programação</li>
+                    <li>Jogar jogos online</li>
+                    <li>Ler sobre temas que me interessam</li>
+                </ul>
+                <br>
+                <p>Sou um jovem ambicioso que gostade comunicar. Discutir e partilharideias para desenvolvimentopessoal e profissional.</p>
+            </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
