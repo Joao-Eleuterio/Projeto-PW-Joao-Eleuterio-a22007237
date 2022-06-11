@@ -53,6 +53,8 @@ footer {
 
 }
 
+footer div{
+margin-top:0px;}
 footer div:nth-child(1){
     margin-left: 47%;
     margin-right: 40%;
@@ -61,7 +63,7 @@ footer div:nth-child(1){
     background-position: center;
 }
 footer div:nth-child(2){ font-size:120%;
-    margin-left: 93%; margin-bottom:auto; margin-top:auto; color:white;
+    margin-left: 93%; margin-top:auto; color:white;
 }
 
 
