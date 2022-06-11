@@ -64,11 +64,14 @@
 <footer>
     <div>ULHT - 2022</div>
     <div class="dropup">
-        <button style="width:100%;background-color:transparent;color:white;font-size:100%;" id="hour" onclick="myFunction()"></button>
+        <button style="width:100%;background-color:transparent;color:white;font-size:100%;" id="hour"></button>
         <div class="dropup-content">
-            <button onclick="myFunction1()" style="width:100%;background-color:transparent;font-size:100%;">Lisboa</button>
-            <button onclick="myFunction()" style="width:100%;background-color:transparent;font-size:100%;">America</button>
-            <button onclick="myFunction2()" style="width:100%;background-color:transparent;font-size:100%;">Japão</button>
+            <button onclick="myFunction1()" style="width:100%;background-color:transparent;font-size:100%;">Lisboa
+            </button>
+            <button onclick="myFunction()" style="width:100%;background-color:transparent;font-size:100%;">America
+            </button>
+            <button onclick="myFunction2()" style="width:100%;background-color:transparent;font-size:100%;">Japão
+            </button>
         </div>
     </div>
 
@@ -102,6 +105,15 @@ function myFunction1(){d=0;}
 function myFunction2(){d=2;}
 
 const INTERVAL_ID = setInterval(watch, 1000);
+
+
+
+ document.addEventListener('DOMContentLoaded', () => {
+
+            fetch('https://api.ipma.pt/open-data/observation/meteorology/stations/observations.json')
+                .then(response => response.json())
+                .then(data => {console.log(data)});
+        });
 </script>
 </body>
 </html>
