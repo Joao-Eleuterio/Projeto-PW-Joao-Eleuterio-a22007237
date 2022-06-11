@@ -1,0 +1,32 @@
+body{background-color: rgb(230, 230, 230);}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.graficos{
+float:right;
+}
+
+.quizz{
+float:left;}
+
+.container div  {
+  float:left;
+  width:auto;
+  height:auto; min-height:250px;
+  padding:2%;
+  margin: 0.5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey; margin-bottom:60px;
+  line-height:40px;
+}
+.titulo{
+ background-color:  rgb(30, 133, 255);
+ color:white;  text-align:center;
+ font-size:250%;
+}

@@ -1,0 +1,47 @@
+body{background-color: rgb(230, 230, 230);}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+.container div  div {
+  float:left;
+  width:15%;
+  height:auto; min-height:250px;
+  padding:2%;
+  margin: 0.5%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey; margin-bottom:60px;
+}
+
+.container div{ padding:4%; width:75%;margin-bottom:-5%;
+}
+.semestre{
+  width:auto;
+  height:auto;
+  margin-top:-2%;
+  margin-bottom:5px;
+  text-align:center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+.ano{
+  width:100%;
+  background-color: rgb(30, 133, 255);
+  text-align:center;
+  color:white;
+}
+
+h5{ margin-top: 10%;}
+
+
+
+.titulo{
+ background-color:  rgb(30, 133, 255);
+ color:white;  text-align:center;
+ font-size:250%;
+}

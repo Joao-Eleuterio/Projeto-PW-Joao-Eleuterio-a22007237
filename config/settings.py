@@ -53,12 +53,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # novo
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # novo
+
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -139,6 +140,6 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': "Zc-b3uHN_dZTPIphHDsdzR3NZPc",
 }
 
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static'))]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # novo
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static')), str(BASE_DIR.joinpath('media'))]  # novo se a pasta static estiver na pasta da aplicação app, altere para str(BASE_DIR.joinpath('app/static'))
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))   # novo
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # novo

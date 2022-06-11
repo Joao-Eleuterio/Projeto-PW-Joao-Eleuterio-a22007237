@@ -1,0 +1,43 @@
+.container {
+  display: block;
+  justify-content: center;
+
+}
+
+
+.container > div {
+  padding:4%; margin-bottom:-5%;
+  width:70%;
+ height:100%;
+  padding:2%;
+  margin: 0.5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey;
+  margin-bottom:4%;
+}
+
+.titulo{
+ background-color:  rgb(30, 133, 255);
+ color:white;  text-align:center;
+ font-size:250%;
+}
+
+
+.imagem{ height:auto;
+ width:auto;
+ float: left;}
+
+.tecnologias{columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;}
+ul{margin-left:2%;}
+
+
+
+.texto{  margin-left:20%;
+
+   max-width:200%;
+    color:black;}
