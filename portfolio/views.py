@@ -179,4 +179,4 @@ def login_page_view(request):
 
 def logout_page_view(request):
     logout(request)
-    return render(request, 'portfolio/login.html')
+
