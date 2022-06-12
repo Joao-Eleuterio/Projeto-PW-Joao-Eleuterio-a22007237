@@ -9,6 +9,8 @@ from .forms import PostForm, QuizzForm, ProjetosForm, NoticiaForm, TFCForm
 from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Pessoa, Noticia, Tecnologias, TFC
 from .quizzFunctions import desenha_grafico_resultados, informacao_utilizadores
 from django.contrib.auth.decorators import login_required
+import matplotlib
+from matplotlib import pyplot as plt
 
 
 def home_page_view(request):
@@ -129,7 +131,6 @@ def noticia_page_view(request):
 
 @login_required
 def nova_Noticia_view(request):
-
     if request.method == 'POST':
         form = NoticiaForm(request.POST or None, request.FILES)
         if form.is_valid():
