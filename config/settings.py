@@ -129,7 +129,7 @@ MEDIA_URL = '/portfolio/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static'))]
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static')), str(BASE_DIR.joinpath('media'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # novo
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # novo
 
