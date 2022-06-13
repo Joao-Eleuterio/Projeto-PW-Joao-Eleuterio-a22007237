@@ -42,12 +42,14 @@
         </form>
 
     </div>
+    {% if user.is_authenticated %}
     <div id="diagrama">
         <h2>Diagrama</h2><br><br><br>
         {% load static %}
         <img src="static/images/Diagrama_DER.drawio" alt="ERROR" width="100%" height="auto"
              style="margin-bottom:10%;">
     </div>
+    {% endif %}
 
 </div>
 

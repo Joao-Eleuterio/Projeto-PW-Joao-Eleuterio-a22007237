@@ -44,6 +44,34 @@ def desenha_grafico_resultados(objetos):
     return uri
 
 
+def cria_grafico(objetos):
+    dados = informacao_utilizadores(objetos)
+
+    dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
+
+    pessoa = list(dados.keys())
+    pontuacao = list(dados.values())
+
+    plt.figure(figsize=(13, 5))
+    plt.barh(pessoa, pontuacao)
+    plt.title("Pontuação dos participantes!")
+    plt.ylabel("Nome dos participantes")
+    plt.xlabel("Pontuação")
+    plt.autoscale()
+
+    fig = plt.gcf()
+    plt.close()
+
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png')
+
+    buf.seek(0)
+    string = base64.b64encode(buf.read())
+    uri = urllib.parse.quote(string)
+
+    return uri
+
+
 def QuizzPontuacao(input):
     pontuacao = 0
 

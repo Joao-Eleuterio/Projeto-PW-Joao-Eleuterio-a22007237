@@ -1,16 +1,19 @@
+import urllib
+
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.gis.geos import io
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import datetime
 from django.urls import reverse
 
 # Create your views here.
-from .forms import PostForm, QuizzForm, ProjetosForm, NoticiaForm, TFCForm
-from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Pessoa, Noticia, Tecnologias, TFC
-from .quizzFunctions import desenha_grafico_resultados, informacao_utilizadores
+from django.utils.baseconv import base64
+
+from .forms import PostForm, QuizzForm, NoticiaForm, TFCForm
+from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Noticia, Tecnologias, TFC
+from .quizzFunctions import cria_grafico
 from django.contrib.auth.decorators import login_required
-import matplotlib
-from matplotlib import pyplot as plt
 
 
 def home_page_view(request):
@@ -24,6 +27,9 @@ def licenciatura_page_view(request):
 
 def projetos_page_view(request):
     form = TFCForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('portfolio:projetos'))
     context = {'projetos': Projetos.objects.all(), 'pessoa': Projetos.participantes, 'TFC': TFC.objects.all(),
                'formTFC': form}
 
@@ -55,33 +61,6 @@ def quizz_page_view(request):
 
     return render(request, 'portfolio/quizz.html', context)
 
-
-def cria_grafico(objetos):
-    dados = informacao_utilizadores(objetos)
-
-    dados = dict(sorted(dados.items(), key=lambda item: item[1], reverse=False))
-
-    pessoa = list(dados.keys())
-    pontuacao = list(dados.values())
-
-    plt.figure(figsize=(13, 5))
-    plt.barh(pessoa, pontuacao)
-    plt.title("Pontuação dos participantes!")
-    plt.ylabel("Nome dos participantes")
-    plt.xlabel("Pontuação")
-    plt.autoscale()
-
-    fig = plt.gcf()
-    plt.close()
-
-    buf = io.BytesIO()
-    fig.savefig(buf, format='png')
-
-    buf.seek(0)
-    string = base64.b64encode(buf.read())
-    uri = urllib.parse.quote(string)
-
-    return uri
 
 
 def blog_page_view(request):

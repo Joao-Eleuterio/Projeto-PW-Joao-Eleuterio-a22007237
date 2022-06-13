@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',  # novo
+     'whitenoise.runserver_nostatic',  # novo
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
@@ -50,12 +50,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # novo
+
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -128,13 +129,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/portfolio/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static')), str(BASE_DIR.joinpath('media'))]
-STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # novo
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # novo
-
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': "joaoeleuterio",
     'API_KEY': "222161335646556",
     'API_SECRET': "Zc-b3uHN_dZTPIphHDsdzR3NZPc",
 }
+STATICFILES_DIRS = [str(BASE_DIR.joinpath('portfolio/static')), str(BASE_DIR.joinpath('media'))]
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))  # novo
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  # novo
+
+
