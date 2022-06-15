@@ -147,7 +147,7 @@ def login_page_view(request):
 
         if utilizador is not None:
             login(request, utilizador)
-            return render(request, 'portfolio/sobreWebsite.html')
+            return render(request, 'portfolio/home.html')
         else:
             return render(
                 request, 'portfolio/login.html',

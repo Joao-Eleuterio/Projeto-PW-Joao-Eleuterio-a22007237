@@ -26,7 +26,7 @@
             {%for tecnologia in tecnologias %}
             <div><h2>{{tecnologia.nome}} </h2>
                 <p>{{tecnologia.descricao}}</p>
-               <!-- <img src="{{tecnologia.Logotipo.url}}">-->
+                <img src="{{tecnologia.Logotipo.url}}">
             </div>
             {%endfor%}
         </div>
@@ -46,7 +46,8 @@
     <div id="diagrama">
         <h2>Diagrama</h2><br><br><br>
         {% load static %}
-        <img src="{% static '/images/Diagrama_DER.drawio' %}" alt="ERROR" width="100%" height="auto"
+
+        <img src="static/portfolio/images/Diagrama_DER.drawio" alt="ERROR" width="100%" height="auto"
              style="margin-bottom:10%;">
     </div>
     {% endif %}
@@ -65,8 +66,7 @@
             <div class="city">Cidade Exemplo, BR</div>
             <div class="date">Terça, 1 Dezembro 2020</div>
             <div class="container-img">
-                {% load static %}
-                <img src="{% static '/images/icons/unknown.png' %}">
+                <img src='static/portfolio/images/icons/unknown.png'>
             </div>
             <div class="container-temp mx-4 my-3">
                 <div>22</div>
@@ -186,7 +186,7 @@ function displayResults(weather) {
     date.innerText = dateBuilder(now);
 
     let iconName = weather.weather[0].icon;
-    container_img.innerHTML = `<img src="{% static '/images/icons/${iconName}.png' %}">`;
+    container_img.innerHTML = `<img src='static/portfolio/images/icons/${iconName}.png'>`;
 
     let temperature = `${Math.round(weather.main.temp)}`
     temp_number.innerHTML = temperature;
