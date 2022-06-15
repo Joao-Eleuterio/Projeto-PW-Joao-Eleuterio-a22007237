@@ -67,10 +67,7 @@ def cria_grafico(objetos):
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
-    print(pessoa, flush=True)
-    print(pontuacao, flush=True)
-    print(string, flush=True)
-    print(uri, flush=True)
+
     return uri
 
 
