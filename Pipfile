@@ -11,8 +11,6 @@ psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "==19.9.0"
 werkzeug = "*"
-matplotlib = "*"
-pillow = "*"
 
 [dev-packages]
 

@@ -51,7 +51,8 @@ def cria_grafico(objetos):
 
     pessoa = list(dados.keys())
     pontuacao = list(dados.values())
-
+    print(pessoa)
+    print(pontuacao)
     plt.figure(figsize=(13, 5))
     plt.barh(pessoa, pontuacao)
     plt.title("Pontuação dos participantes!")
@@ -68,7 +69,8 @@ def cria_grafico(objetos):
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
-
+    print(string)
+    print(uri)
     return uri
 
 
