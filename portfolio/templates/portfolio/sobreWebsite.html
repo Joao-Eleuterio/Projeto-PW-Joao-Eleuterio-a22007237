@@ -55,13 +55,10 @@
 </div>
 
 <div class="container-fluid p-0 container-sm d-flex justify-content-center">
-
     <div class="card text-center shadow-lg" style="width: 26rem;">
-
         <div class="card-header bg-white text-dark font-weight-bold">
             TEMPO E TEMPERATURA
         </div>
-
         <div class="card-body">
             <div class="city">Cidade Exemplo, BR</div>
             <div class="date">Terça, 1 Dezembro 2020</div>
@@ -87,14 +84,15 @@
                 </div>
             </div>
         </div>
-<br>
-<br>
-<br>
-<br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
-    <div>
-        <p class="proverbio"></p>
-    </div>
+</div>
+
+<div>
+    <p class="proverbio" ></p>
 </div>
 <script>const api = {
     key: "64ed82577ced7f69cb1687f0ce536131",
@@ -215,6 +213,7 @@ function capitalizeFirstLetter(string) {
 }
 
 
+
 </script>
 <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 <script>const options = {
@@ -228,5 +227,6 @@ function capitalizeFirstLetter(string) {
 fetch('https://proverbs.p.rapidapi.com/proverbs-api.php?includeSources=rumi%2Cemerson&searchTerm=love', options)
 	.then(response => response.json())
 	.then(response => const prov= document.querySelector('.proverbio'); prov.innerHTML= 'response';)
-	.catch(err => console.error(err));</script>
+	.catch(err => console.error(err));
+</script>
 {% endblock main %}
