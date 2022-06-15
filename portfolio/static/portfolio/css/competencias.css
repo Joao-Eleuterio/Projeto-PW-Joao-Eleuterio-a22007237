@@ -26,8 +26,7 @@
 }
 
 
-.imagem{ height:auto;
- width:auto;
+.imagem{height:300px; width:300px; padding:2%;
  float: left;}
 
 .tecnologias{columns: 2;
