@@ -226,7 +226,8 @@ function capitalizeFirstLetter(string) {
 
 fetch('https://proverbs.p.rapidapi.com/proverbs-api.php?includeSources=rumi%2Cemerson&searchTerm=love', options)
 	.then(response => response.json())
-	.then(response => const prov= document.querySelector('.proverbio'); prov.innerHTML= 'response';)
+	.then(response => const prov= document.querySelector('.proverbio');)
 	.catch(err => console.error(err));
+	window.addEventListener('load', () => {prov.innerHTML= 'response';}
 </script>
 {% endblock main %}

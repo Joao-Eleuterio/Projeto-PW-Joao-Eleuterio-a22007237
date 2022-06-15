@@ -102,10 +102,10 @@ body{
     font-size: 22px;
 }
 
-.container-fluid{margin-left:auto;
-margin-right:auto;
+.container-fluid{margin-left:40%;
+margin-right:40%;
 
 }
 
 .proverbio{
-margin:100px;}
+margin:100px; color:black;}
