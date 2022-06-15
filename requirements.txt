@@ -1,0 +1,8 @@
+asgiref==3.5.2
+Django==4.0.5
+Pillow==9.1.1
+pytz==2022.1
+sqlparse==0.4.2
+cloudinary~=1.29.0
+environs~=9.5.0
+matplotlib~=3.5.2

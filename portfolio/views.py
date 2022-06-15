@@ -1,7 +1,6 @@
 import urllib
 
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.gis.geos import io
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import datetime

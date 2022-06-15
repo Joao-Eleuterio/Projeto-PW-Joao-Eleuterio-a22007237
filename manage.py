@@ -3,6 +3,8 @@
 import os
 import sys
 
+from werkzeug.debug import console
+
 
 def main():
     """Run administrative tasks."""
