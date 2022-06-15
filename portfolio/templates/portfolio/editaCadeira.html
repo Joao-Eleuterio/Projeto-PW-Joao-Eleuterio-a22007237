@@ -8,14 +8,15 @@
 {% endblock style %}
 
 {% block main %}
-<h3>Edita Noticia</h3>
+<h3>Edita Cadeira</h3>
 <div class="container">
-    <form action="{% url 'portfolio:editaNoticia' noticia_id %}" method="POST">
+    <form action="{% url 'portfolio:editaCadeira' cadeira_id %}" method="POST">
         <div>
             {% csrf_token %}
             {{ form.as_p }}
+            {{form1.as_p}}
         </div>
-        <a href="{% url 'portfolio:noticia' %}" role="button" class="btn btn-warning">Cancelar</a>
+        <a href="{% url 'portfolio:licenciatura' %}" role="button" class="btn btn-warning">Cancelar</a>
         <input type="submit" value="Gravar" class="btn btn-success">
     </form>
 </div>

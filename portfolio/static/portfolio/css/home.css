@@ -34,7 +34,7 @@ border-radius:30px;}
 
 
 article {  padding: 0 4vw;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -44,7 +44,7 @@ article {  padding: 0 4vw;
   background-image: url("../images/back.jpeg");
 
   /* Set a specific height */
-  height:20vh;
+  height:27vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -54,7 +54,7 @@ article {  padding: 0 4vw;
 }
 
 
-.SobreMim, .projetos, .web, .blog, .contacto{
+ .projetos, .web, .blog, .contacto{
   /* The image used */
   background-image: url("../images/black.jpg");
   height:90vh;

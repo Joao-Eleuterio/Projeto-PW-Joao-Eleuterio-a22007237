@@ -9,8 +9,8 @@ from django.urls import reverse
 # Create your views here.
 from django.utils.baseconv import base64
 
-from .forms import PostForm, QuizzForm, NoticiaForm, TFCForm
-from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Noticia, Tecnologias, TFC
+from .forms import PostForm, QuizzForm, NoticiaForm, TFCForm, ProjetosForm, CadeiraForm, LicenciaturaForm
+from .models import Post, Quizz, Projetos, Licenciatura, Formacao, Certificado, Noticia, Tecnologias, TFC, Cadeira
 from .quizzFunctions import cria_grafico
 from django.contrib.auth.decorators import login_required
 
@@ -24,6 +24,37 @@ def licenciatura_page_view(request):
     return render(request, 'portfolio/licenciatura.html', context)
 
 
+@login_required
+def nova_Cadeira_view(request):
+    if request.method == 'POST':
+
+        form = CadeiraForm(request.POST or None, request.FILES)
+        form1 = LicenciaturaForm(request.POST or None, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('portfolio:licenciatura'))
+
+    form = CadeiraForm()
+    form1 = LicenciaturaForm()
+    context = {'form': form, 'form1': form1}
+    return render(request, 'portfolio/novaCadeira.html', context)
+
+
+@login_required
+def edita_Cadeira_view(request, cadeira_id):
+    cadeira = Cadeira.objects.get(id=cadeira_id)
+    cadeira1 = Licenciatura.objects.get(id=cadeira_id)
+    form = CadeiraForm(request.POST or None, instance=cadeira)
+    form1 = LicenciaturaForm(request.POST or None, instance=cadeira1)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('portfolio:licenciatura'))
+
+    context = {'form': form, 'form1': form1, 'cadeira_id': cadeira_id}
+    return render(request, 'portfolio/editaCadeira.html', context)
+
+
 def projetos_page_view(request):
     form = TFCForm(request.POST or None)
     if form.is_valid():
@@ -33,6 +64,32 @@ def projetos_page_view(request):
                'formTFC': form}
 
     return render(request, 'portfolio/projetos.html', context)
+
+
+@login_required
+def novo_Projeto_view(request):
+    if request.method == 'POST':
+        form = ProjetosForm(request.POST or None, request.FILES)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect(reverse('portfolio:projetos'))
+
+    form = ProjetosForm()
+    context = {'form': form}
+    return render(request, 'portfolio/novoProjeto.html', context)
+
+
+@login_required
+def edita_Projeto_view(request, projeto_id):
+    projeto = Projetos.objects.get(id=projeto_id)
+    form = ProjetosForm(request.POST or None, instance=projeto)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('portfolio:projetos'))
+
+    context = {'form': form, 'projeto_id': projeto_id}
+    return render(request, 'portfolio/editaProjeto.html', context)
 
 
 def formacao_page_view(request):
@@ -51,12 +108,10 @@ def competencias_page_view(request):
 
 def quizz_page_view(request):
     form = QuizzForm(request.POST or None)
+    context = {'form': form, 'data': cria_grafico(Quizz.objects.all())}
     if form.is_valid():
         form.save()
-        context = {'form': form, 'data': cria_grafico(Quizz.objects.all())}
         return render(request, 'portfolio/quizz.html', context)
-
-    context = {'form': form}
 
     return render(request, 'portfolio/quizz.html', context)
 

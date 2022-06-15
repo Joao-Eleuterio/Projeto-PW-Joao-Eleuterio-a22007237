@@ -16,7 +16,6 @@ p { margin-bottom:0.5em;}
 
 /* e aqui que tem a parte de tras */
 a.modal-open {
-
   display:flex;
   padding:5%;
   margin-left:auto;
@@ -24,7 +23,7 @@ a.modal-open {
   width:70%;
   height:auto;
   background:white;
- border-radius: 10px;
+  border-radius: 10px;
   box-shadow: 5px 5px 15px grey;
 }
 a.modal-open div:last-child  {

@@ -24,9 +24,11 @@
         <div>
             <h2>Tecnologias utilizadas</h2><br>
             {%for tecnologia in tecnologias %}
-            <div><h2>{{tecnologia.nome}} </h2>
+            <div><img src="{{tecnologia.logotipo.url}}" class="imgTec"><h2>{{tecnologia.nome}} {% if tecnologia.acronimo != '.'%} - {{tecnologia.acronimo}}{%endif%}</h2>
                 <p>{{tecnologia.descricao}}</p>
-                <img src="{{tecnologia.Logotipo.url}}">
+                {% if tecnologia.link != ''%}<p>Link: <a href="{{tecnologia.link}}">{{tecnologia.link}}</a></p>{%endif%}
+                <p>Criador:{{tecnologia.criador}}</p>
+                <p>Criado:{{tecnologia.ano_criacao}}</p>
             </div>
             {%endfor%}
         </div>

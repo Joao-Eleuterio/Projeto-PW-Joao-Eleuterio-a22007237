@@ -92,11 +92,11 @@ class LicenciaturaForm(ModelForm):
         model = Licenciatura
         fields = '__all__'
 
-        widgets = {
-        }
-
         labels = {
-
+            'Ano': 'Ano da faculdade',
+            'Semestre': 'Semestre da cadeira',
+            'Cadeira': 'Cadeira',
+            'Formação': 'formacao'
         }
 
         help_texts = {
@@ -123,9 +123,6 @@ class FormacaoForm(ModelForm):
     class Meta:
         model = Cadeira
         fields = '__all__'
-
-        widgets = {
-        }
 
         labels = {
 
@@ -158,8 +155,6 @@ class TFCForm(ModelForm):
     class Meta:
         model = TFC
         fields = '__all__'
-
-
 
     labels = {
         'autores': 'Autor',

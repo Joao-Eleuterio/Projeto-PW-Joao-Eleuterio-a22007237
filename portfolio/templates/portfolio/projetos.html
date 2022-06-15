@@ -9,6 +9,8 @@
 {% block main %}
 <h1 class="titulo">Projetos</h1>
 <br>
+<div class="btnNovoProjeto"><a href="{% url 'portfolio:novoProjeto' %}" class="btn btn-success btn-block">+ Novo
+        Projeto</a></div>
 <div class="aba">
 
 
@@ -22,6 +24,7 @@
                 <img src="{{projeto.imagem.url}}" alt=""></div>
             <div><h3>{{projeto.nome_do_projeto}}</h3>
                 <p>{{projeto.ano_realizacao}} {% if projeto.linguagens != '' %}|{{projeto.linguagens}}{%endif%}</p>
+
             </div>
         </a>
         <div class="modal" id="modal{{projeto.nome_do_projeto}}">
@@ -55,6 +58,7 @@
                     {%endif%}
 
                     <button>Download</button>
+                     {% if user.is_authenticated %}<a href="{% url 'portfolio:editaProjeto' projeto.id %}"><button> Editar </button></a>{%endif%}
                 </div>
             </div>
         </div>

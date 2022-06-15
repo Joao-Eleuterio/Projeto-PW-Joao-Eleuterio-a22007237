@@ -11,6 +11,8 @@
 {% block main %} <h1 class="titulo">Licenciatura</h1>
     <br>
     <br>
+<div class="btnNovaCadeira"><a href="{% url 'portfolio:novaCadeira' %}" class="btn btn-success btn-block">+ Nova
+        Cadeira</a></div><br><br>
 <div class="container">
 
     {%for licenciaturas in licenciatura %}
@@ -50,6 +52,7 @@
                 <a href="projetos#modal{{cadeiras.projeto.nome_do_projeto}}">{{cadeira.projeto.nome_do_projeto}}</a></details>
             {%endif%}
             <a href="{{cadeira.link_Lusofona}}">Lusofona</a>
+            <a href="{% url 'portfolio:editaCadeira' licenciaturas.id %}" class="btnEditar">Editar</a>
         </div>
         {%endfor%}
     </div>
