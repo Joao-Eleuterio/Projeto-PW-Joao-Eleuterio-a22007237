@@ -5,7 +5,7 @@ from django.db import models
 
 
 def resolution_path(instance, filename):
-    return f'media/noticia/{instance.id}/'
+    return f'noticia/{instance.id}/'
 
 
 class Post(models.Model):
