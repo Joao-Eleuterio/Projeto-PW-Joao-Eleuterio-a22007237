@@ -4,7 +4,7 @@ import urllib
 
 import matplotlib
 from matplotlib import pyplot as plt
-import logging
+
 matplotlib.use('Agg')
 
 
@@ -51,8 +51,6 @@ def cria_grafico(objetos):
 
     pessoa = list(dados.keys())
     pontuacao = list(dados.values())
-    logging.debug(pessoa)
-    logging.debug(pontuacao)
     plt.figure(figsize=(13, 5))
     plt.barh(pessoa, pontuacao)
     plt.title("Pontuação dos participantes!")
@@ -69,8 +67,10 @@ def cria_grafico(objetos):
     buf.seek(0)
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
-    logging.debug(string)
-    logging.debug(uri)
+    print(pessoa, flush=True)
+    print(pontuacao, flush=True)
+    print(string, flush=True)
+    print(uri, flush=True)
     return uri
 
 
