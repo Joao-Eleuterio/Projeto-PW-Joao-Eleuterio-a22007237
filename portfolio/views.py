@@ -53,13 +53,12 @@ def quizz_page_view(request):
     form = QuizzForm(request.POST or None)
     if form.is_valid():
         form.save()
-        context = {'data': cria_grafico(Quizz.objects.all())}
+        context = {'form': form, 'data': cria_grafico(Quizz.objects.all())}
         return render(request, 'portfolio/quizz.html', context)
 
     context = {'form': form}
 
     return render(request, 'portfolio/quizz.html', context)
-
 
 
 def blog_page_view(request):
