@@ -61,7 +61,7 @@ margin-left:5%;margin-bottom:10%;}
 #diagrama{margin-left:5%;}
 
 
-
+btn{}
 
 
 
@@ -107,5 +107,24 @@ margin-right:40%;
 
 }
 
-.proverbio{
-margin:100px; color:black;}
+.btnRandomFact{  width:15%;
+  height:auto;
+  padding:2%;
+
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
+
+
+}
+
+.randomFact1{
+  height:auto;
+  padding:2%;
+  margin: 0.5%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey; margin-bottom:60px;
+}

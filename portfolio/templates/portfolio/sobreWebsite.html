@@ -42,18 +42,31 @@
         </form>
 
     </div>
-    {% if user.is_authenticated %}
-    <div id="diagrama">
-        <h2>Diagrama</h2><br><br><br>
-        {% load static %}
+</div>
+{% if user.is_authenticated %}
+<div id="diagrama">
+    <h2>Diagrama</h2><br><br><br>
+    {% load static %}
 
-        <img src="static/portfolio/images/Diagrama_DER.drawio" alt="ERROR" width="100%" height="auto"
-             style="margin-bottom:10%;">
+    <img src="static/portfolio/images/Diagrama_DER.drawio" alt="ERROR" width="100%" height="auto"
+         style="margin-bottom:10%;">
+</div>
+{% endif %}
+
+
+<h1 align="left" style=" font-size:250%;margin-left:5%;">Api's</h1>
+<br><br>
+{% if user.is_authenticated %}
+<div class="btnRandomFact">
+    <button class="btn" onclick="randomfact()">Random Fact</button>
+    <div class="randomFact1">
+        <p id="randomFact" style="color:black;text-align:center;"></p>
     </div>
-    {% endif %}
-
 </div>
 
+<br>
+<br>
+<br>{% endif %}
 <div class="container-fluid p-0 container-sm d-flex justify-content-center">
     <div class="card text-center shadow-lg" style="width: 26rem;">
         <div class="card-header bg-white text-dark font-weight-bold">
@@ -91,10 +104,11 @@
     </div>
 </div>
 
-<div>
-    <p class="proverbio" ></p>
-</div>
-<script>const api = {
+
+<script>
+//----------------------------------------------------------------------------------------
+//METEOROLOGIA
+const api = {
     key: "64ed82577ced7f69cb1687f0ce536131",
     base: "https://api.openweathermap.org/data/2.5/",
     lang: "pt_br",
@@ -127,7 +141,7 @@ window.addEventListener('load', () => {
         coordResults(lat, long);
     }
     function showError(error) {
-        alert(`erro: ${error.message}`);
+        console.log(`erro: ${error.message}`);
     }
 })
 
@@ -140,7 +154,7 @@ function coordResults(lat, long) {
             return response.json();
         })
         .catch(error => {
-            alert(error.message)
+            console.log(error.message)
         })
         .then(response => {
             displayResults(response)
@@ -168,7 +182,7 @@ function searchResults(city) {
             return response.json();
         })
         .catch(error => {
-            alert(error.message)
+            console.log(error.message)
         })
         .then(response => {
             displayResults(response)
@@ -211,23 +225,26 @@ function dateBuilder(d) {
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-
-
-</script>
-<script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
-<script>const options = {
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//RANDOM FACT
+function randomfact() {
+       const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '5bdbd934ecmsh3378c349e24bf99p184329jsn594fa8f757cf',
-		'X-RapidAPI-Host': 'proverbs.p.rapidapi.com'
+		'X-RapidAPI-Host': 'random-facts2.p.rapidapi.com'
 	}
 };
 
-fetch('https://proverbs.p.rapidapi.com/proverbs-api.php?includeSources=rumi%2Cemerson&searchTerm=love', options)
-	.then(response => response.json())
-	.then(response => const prov= document.querySelector('.proverbio');)
-	.catch(err => console.error(err));
-	window.addEventListener('load', () => {prov.innerHTML= 'response';}
+fetch('https://random-facts2.p.rapidapi.com/getfact', options)
+        .then(response => response.json())
+        .then(data => {document.getElementById('randomFact').innerHTML = String(data.Fact);});
+}
+//----------------------------------------------------------------------------------------
+
 </script>
+<script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+
+
 {% endblock main %}
