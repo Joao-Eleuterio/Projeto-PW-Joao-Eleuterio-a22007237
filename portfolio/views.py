@@ -20,7 +20,8 @@ def home_page_view(request):
 
 
 def licenciatura_page_view(request):
-    context = {'licenciatura': Licenciatura.objects.all(), "data": [1, 2, 3, 4, 5]}
+    licenciatura = Licenciatura.objects.all().order_by('ano', 'semestre')
+    context = {'licenciatura': licenciatura, "data": [1, 2, 3, 4, 5]}
     return render(request, 'portfolio/licenciatura.html', context)
 
 
