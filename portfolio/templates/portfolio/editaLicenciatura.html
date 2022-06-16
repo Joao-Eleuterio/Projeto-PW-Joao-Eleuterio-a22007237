@@ -3,20 +3,20 @@
 {% block style %}
 
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/nova.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/edita.css' %}"/>
 
 {% endblock style %}
 
 {% block main %}
-<h3>Nova Cadeira</h3>
+<h3>Edita Licenciatura</h3>
 <div class="container">
-     <form method = "post" enctype="multipart/form-data">
+    <form action="{% url 'portfolio:editaLicenciatura' licenciatura_id %}" method="POST">
         <div>
             {% csrf_token %}
             {{ form.as_p }}
         </div>
         <a href="{% url 'portfolio:licenciatura' %}" role="button" class="btn btn-warning">Cancelar</a>
-            <input type="submit" value="Gravar" class="btn btn-success">
+        <input type="submit" value="Gravar" class="btn btn-success">
     </form>
 </div>
 {% endblock %}

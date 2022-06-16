@@ -27,31 +27,39 @@ def licenciatura_page_view(request):
 @login_required
 def nova_Cadeira_view(request):
     if request.method == 'POST':
-
         form = CadeiraForm(request.POST or None, request.FILES)
-        form1 = LicenciaturaForm(request.POST or None, request.FILES)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect(reverse('portfolio:licenciatura'))
 
     form = CadeiraForm()
-    form1 = LicenciaturaForm()
-    context = {'form': form, 'form1': form1}
+    context = {'form': form}
     return render(request, 'portfolio/novaCadeira.html', context)
 
 
 @login_required
-def edita_Cadeira_view(request, cadeira_id):
-    cadeira = Cadeira.objects.get(id=cadeira_id)
-    cadeira1 = Licenciatura.objects.get(id=cadeira_id)
-    form = CadeiraForm(request.POST or None, instance=cadeira)
-    form1 = LicenciaturaForm(request.POST or None, instance=cadeira1)
+def edita_Licenciatura_view(request, licenciatura_id):
+    licenciatura = Licenciatura.objects.get(id=licenciatura_id)
+    form = LicenciaturaForm(request.POST or None, instance=licenciatura)
 
     if form.is_valid():
         form.save()
         return HttpResponseRedirect(reverse('portfolio:licenciatura'))
 
-    context = {'form': form, 'form1': form1, 'cadeira_id': cadeira_id}
+    context = {'form': form, 'licenciatura_id': licenciatura_id}
+    return render(request, 'portfolio/editaLicenciatura.html', context)
+
+
+@login_required
+def edita_Cadeira_view(request, cadeira_id):
+    cadeira = Cadeira.objects.get(id=cadeira_id)
+    form = CadeiraForm(request.POST or None, instance=cadeira)
+
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('portfolio:licenciatura'))
+
+    context = {'form': form, 'cadeira_id': cadeira_id}
     return render(request, 'portfolio/editaCadeira.html', context)
 
 

@@ -10,8 +10,9 @@ urlpatterns = [
     # LICENCIATURA
     path('licenciatura', views.licenciatura_page_view, name='licenciatura'),
     path('novaCadeira', views.nova_Cadeira_view, name='novaCadeira'),
+    path('editaLicenciatura/<int:licenciatura_id>', views.edita_Licenciatura_view, name='editaLicenciatura'),
     path('editaCadeira/<int:cadeira_id>', views.edita_Cadeira_view, name='editaCadeira'),
-    path('apagalicenciatura/<int:cadeira_id>', views.licenciatura_page_view, name='apagalicenciatura'),
+    path('apagaLicenciatura/<int:cadeira_id>', views.licenciatura_page_view, name='apagaLicenciatura'),
 
     # PROJETOS
     path('projetos', views.projetos_page_view, name='projetos'),
@@ -53,14 +54,23 @@ urlpatterns = [
     path('logout', views.logout_page_view, name='logout'),
 ]
 
+#TODO
 
-#   TODO
-# escrever textos
-#a página sobre este website fala sobre padrões usados no website: clienteservidor HTTP, software MVC, comunicação assíncrona AJAX.
+# MVC -> Model–view–controller
+# Segurança: O controller funciona como uma espécie de filtro capaz de impedir que qualquer dado incorreto chegue até a camada modelo.
+# Organização: Esse método de programação permite que um novo desenvolvedor tenha muito mais facilidade em entender o que foi construído,
+# assim como os erros se tornam mais fácil de serem encontrados e corrigidos.
+# Eficiência: Como a arquitetura de software é dividida em 3 componentes , sua aplicação fica muito mais leve, permitindo que vários
+# desenvolvedores trabalhem no projeto de forma independente.
+# Tempo: Com a dinâmica facilitada pela colaboração entre os profissionais de desenvolvimento, o projeto pode ser concluído com muito mais rapidez, tornando o projeto escalável.
+# Transformação: As mudanças que forem necessárias também são mais fluidas, já que não será essencial trabalhar nas regras de negócio e correção de bugs.
 
-# cadeira edita e inserir
+# comunicação assíncrona AJAX
+# AJAX -> AJAX significa Asynchronous JavaScript and XML
+# Simplificando, o AJAX torna o processo de multitarefas mais simples. Sempre que você encontrar uma situação em que duas
+# operações funcionam simultaneamente, uma em execução e a outra ociosa, é bem provável que o AJAX esteja envolvido.
+# AJAX não é uma única tecnologia, ou até mesmo uma linguagem de programação.
 
-
-
-#video
-#o vídeo demonstrativo está incluído na página "sobre" como um iframe
+# fundo home
+#DIAGRAMA
+# video

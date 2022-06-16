@@ -15,16 +15,22 @@
     <div id="esteWebSite">
 
         <h2>Este WebSite</h2><br>
-        <p>Este website foi criado no ambito da cadeira de Programacao web e será utilizado no futuro como meu portfolio
-            pessoal<br><br><br>Escrever aqui</p>
+        <p>Este website foi criado no interesse de desenvolver um portefólio pessoal e profissional, mas que, também,
+            pode ser consultado por todas as pessoas que o quiserem aceder. <br>
+            Feito no âmbito da cadeira de Programação de Web, este site foi criado com o objetivo de reunir todo o meu
+            percurso académico, apresentando todo o processo, trabalhos e projetos que fiz até à data. Sendo estes
+            atualizados segundo o aparecimento de mais conteúdo. <br>
+            É uma ferramenta de pesquisa para quem queira seguir o mesmo caminho que eu, no curso de engenharia
+            informática, e, para mim, como futuro trabalhador nesta área, pois é uma maneira mais prática de mostrar
+            tudo o que eu tenho para oferecer no que diz respeito a empenho, desenvolvimento e ideias.</p>
     </div>
-    <br>
-    <br>
+
     <div id="tecnologias">
         <div>
             <h2>Tecnologias utilizadas</h2><br>
             {%for tecnologia in tecnologias %}
-            <div><img src="{{tecnologia.logotipo.url}}" class="imgTec"><h2>{{tecnologia.nome}} {% if tecnologia.acronimo != '.'%} - {{tecnologia.acronimo}}{%endif%}</h2>
+            <div><img src="{{tecnologia.logotipo.url}}" class="imgTec">
+                <h2>{{tecnologia.nome}} {% if tecnologia.acronimo != '.'%} - {{tecnologia.acronimo}}{%endif%}</h2>
                 <p>{{tecnologia.descricao}}</p>
                 {% if tecnologia.link != ''%}<p>Link: <a href="{{tecnologia.link}}">{{tecnologia.link}}</a></p>{%endif%}
                 <p>Criador:{{tecnologia.criador}}</p>
@@ -38,7 +44,11 @@
     <br>
     <div id="labs">
         <h2>Laboratórios</h2><br>
-        <p>Estes laboratórios ajudaram muitos na criação deste website<br><br><br>Escrever aqui</p>
+        <p>Os laboratórios é ao que chamamos os trabalhos e exercícios feitos em aula. Ou seja, são meios e ferramentas
+            que usamos para desenvolver o crescimento do nosso saber na matéria e na execução do projeto. Podem ser
+            fichas, testes ou exercícios, mas todos estes elementos ajudam no bom progresso. Seja em informática ou
+            noutros campos, a ideia de refletir e desenvolver pensamentos na execução de exercícios sobre os mesmos é
+            sempre uma mais valia no nosso crescimento profissional.</p>
         <form action="https://github.com/Joao-Eleuterio/pw-labs-JoaoEleuterio-a22007237">
             <button type="submit">Labs</button>
         </form>
@@ -244,6 +254,8 @@ fetch('https://random-facts2.p.rapidapi.com/getfact', options)
         .then(data => {document.getElementById('randomFact').innerHTML = String(data.Fact);});
 }
 //----------------------------------------------------------------------------------------
+
+
 
 </script>
 <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>

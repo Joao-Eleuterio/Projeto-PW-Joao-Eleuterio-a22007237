@@ -8,7 +8,10 @@ class PostForm(ModelForm):
         model = Post
         fields = '__all__'
         # inserção de classes CSS para formatação de cada campo do formulário
-
+        widgets = {
+            'titulo': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'descrição da tarefa...'}),
+            'prioridade': forms.NumberInput(attrs={'class': 'form-control', 'max': 3, 'min': 1}),
+        }
         # texto a exibir junto à janela de inserção
         labels = {
             'titulo': 'Título',
@@ -92,8 +95,12 @@ class LicenciaturaForm(ModelForm):
         model = Licenciatura
         fields = '__all__'
 
+        widgets = {
+            'semestre': forms.NumberInput(attrs={'class': 'form-control', 'max': 2, 'min': 1}),
+        }
+
         labels = {
-            'Ano': 'Ano da faculdade',
+            'Ano da faculdade': 'Ano da faculdade',
             'Semestre': 'Semestre da cadeira',
             'Cadeira': 'Cadeira',
             'Formação': 'formacao'
@@ -109,6 +116,8 @@ class CadeiraForm(ModelForm):
         fields = '__all__'
 
         widgets = {
+            'ects': forms.NumberInput(attrs={'class': 'form-control', 'max': 20, 'min': 1}),
+            'ranking': forms.NumberInput(attrs={'class': 'form-control', 'max': 5, 'min': 0}),
         }
 
         labels = {
