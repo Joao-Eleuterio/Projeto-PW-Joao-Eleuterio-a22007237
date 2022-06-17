@@ -10,7 +10,7 @@
 {% block main %}
 <h3>Post</h3>
 <div class="container">
-    <form action="{% url 'portfolio:edita' post_id %}" method="POST">
+    <form action="{% url 'portfolio:editablog' post_id %}" method="POST">
         <div>
             {% csrf_token %}
             {{ form.as_p }}
