@@ -76,41 +76,27 @@
     <div>
         <div>
             <h3 style="text-align:center;">{{tfcs.titulo}}</h3>
-
             <br>
             <br>
             {% load static %}
             <img src="{{tfcs.imagem.url}}" alt="" width="300px">
-
             <br><br>
             <p>
                 <span> Resumo: </span>
                 {{tfcs.resumo}}
             </p>
-
             <br>
-
             <p>Relatório: <a href="{{tfcs.relatorio}}"> Click here </a></p>
-
             <br>
-
             <p>Ano de realização:{{tfcs.ano}}</p>
-
             <br>
-
             <p>Autores: {{ tfcs.autores }} </p>
-
             <br>
             Orientadores:
             {% for tfc_orientadores in tfcs.orientadores.all %}
             <p class="tabNomes">{{ tfc_orientadores }} </p>
-
             {% endfor %}
-
-
             <br>
-
-
             <p><span> GitHub: <a href="{{tfcs.github}}" class="linkGitHub"> Click here </a> </span></p>
 
         </div>
