@@ -41,7 +41,7 @@ article {  padding: 0 4vw;
 
 .parallax {
   /* The image used */
-  background-image: url("../images/back.jpeg");
+  background-image: url("../images/image1.jpg");
 
   /* Set a specific height */
   height:30vh;
@@ -53,24 +53,37 @@ article {  padding: 0 4vw;
   background-size: cover;
 }
 
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/image1.jpg");
+
+  /* Set a specific height */
+  height:20vh;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
 
 .SobreMim, .projetos, .web, .blog{
    height:90vh;
-   background-image: url("../images/ai_hero.jpg");
-   background-size:cover;
-
-
+  background-image: url("../images/image1.jpg");
 }
 
 .SobreMim article, .projetos article, .web article, .blog article{
       color:black;
       height:90vh;
+
 }
 .SobreMim article p, .projetos article p, .web article p, .blog article p,
 .SobreMim article h2, .projetos article h2, .web article h2, .blog article h2{
-    background-color:rgb(30, 133, 255);border-radius: 20px;
+    background-color:rgb(30, 133, 255);  border-radius:30px;
 }
-
 #SobreMim, #projetos, #web, #blog{text-align:center; color:black;}
 /* fallback */
 @font-face {

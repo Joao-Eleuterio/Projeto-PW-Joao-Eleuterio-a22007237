@@ -22,7 +22,19 @@
             atualizados segundo o aparecimento de mais conteúdo. <br>
             É uma ferramenta de pesquisa para quem queira seguir o mesmo caminho que eu, no curso de engenharia
             informática, e, para mim, como futuro trabalhador nesta área, pois é uma maneira mais prática de mostrar
-            tudo o que eu tenho para oferecer no que diz respeito a empenho, desenvolvimento e ideias.</p>
+            tudo o que eu tenho para oferecer no que diz respeito a empenho, desenvolvimento e ideias.<br><br>MVC<br>
+             -Usei MVC (Model-View-Controller), um padrão de projeto de software, para fazer a base de dados do website.
+            Este contribui para a segurança e funciona como uma espécie de filtro capaz de impedir qualquer dado
+            incorreto. Permite, ainda, que haja uma estrutura/código mais legível. As mudanças que foram preciso ser
+            executadas são mais fáceis e mais fluídas.
+<br><br>
+            AJAX<br>
+            - AJAX, que significa Asynchronous JavaScript and XML, serviu para tornar o processo de multitarefas mais
+            simples. Isto é, sempre que encontrei uma situação em que duas operações funcionam simultâneamente, sei que
+            é provável que o AJAX esteja envolvido.
+            AJAX é uma técnica de desenvolvimento Web que permite a criação de aplicações mais interativas, tais como o
+            projeto apresentado. Pois, era minha intenção que este website/portefólio envolvesse esse grande elemento.
+        </p>
     </div>
 
     <div id="tecnologias">
@@ -60,7 +72,7 @@
     <h2>Diagrama</h2><br><br><br>
     {% load static %}
 
-    <img src="static/portfolio/images/Diagrama_DER.drawio" alt="ERROR" width="100%" height="auto"
+    <img src="static/portfolio/images/Diagrama.png" alt="ERROR" width="100%" height="auto"
          style="margin-bottom:10%;">
 </div>
 {% endif %}
@@ -254,6 +266,7 @@ fetch('https://random-facts2.p.rapidapi.com/getfact', options)
         .then(data => {document.getElementById('randomFact').innerHTML = String(data.Fact);});
 }
 //----------------------------------------------------------------------------------------
+
 
 
 

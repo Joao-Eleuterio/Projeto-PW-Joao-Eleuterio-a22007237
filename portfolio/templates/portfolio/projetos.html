@@ -44,7 +44,8 @@
                     {% if projeto.cadeira != "." %}
                     <p class="cadeira"> Cadeira:<a href="licenciatura#{{projeto.cadeira}}"> {{projeto.cadeira}} </a></p>
                     {%endif%}
-
+<br>
+<br>
                     <p class="git"><a href="{{projeto.link_github}}">Github do projeto</a></p>
                     <p class="participante"> Participantes: {% for participante in projeto.participantes.all %}
                         {%if participante.nome == 'Sozinho' %}
@@ -108,6 +109,7 @@
 
 
             <br>
+
 
             <p><span> GitHub: <a href="{{tfcs.link_github}}" class="linkGitHub"> Click here </a> </span></p>
 

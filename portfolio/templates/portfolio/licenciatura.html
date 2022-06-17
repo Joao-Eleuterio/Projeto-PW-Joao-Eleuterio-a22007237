@@ -11,8 +11,9 @@
 {% block main %} <h1 class="titulo">Licenciatura</h1>
 <br>
 <br>
+ {% if user.is_authenticated %}
 <div class="btnNovaCadeira"><a href="{% url 'portfolio:novaCadeira' %}" class="btn btn-success btn-block">+ Nova
-    Cadeira</a></div><br><br>
+    Cadeira</a></div><br><br>{%endif%}
 <div class="container">
 
     {%for licenciaturas in licenciatura %}
@@ -20,8 +21,8 @@
     <h1 class="ano">{{licenciaturas.ano}}º ano</h1>
     {%endif%}
     <div>
-        <h1 class="semestre">{{licenciaturas.semestre}}º semestre <a style="font-size:50%;float:right;margin-right:1%;" href="{% url 'portfolio:editaLicenciatura' licenciaturas.id %}" class="btn btn-success btn-block">+
-           Editar Semestre</a>
+        <h1 class="semestre">{{licenciaturas.semestre}}º semestre  {% if user.is_authenticated %}<a style="font-size:50%;float:right;margin-right:1%;" href="{% url 'portfolio:editaLicenciatura' licenciaturas.id %}" class="btn btn-success btn-block">+
+           Editar Semestre</a>{%endif%}
         </h1>
         {% for cadeira in licenciaturas.cadeiras.all %}
         <div id="{{cadeira.nome_cadeira}}"><h2>{{cadeira.nome_cadeira}}</h2>
@@ -54,7 +55,7 @@
             </details>
             {%endif%}
             <a href="{{cadeira.link_Lusofona}}">Lusofona</a>
-            <a href="{% url 'portfolio:editaCadeira' cadeira.id %}" class="btnEditar">Editar</a>
+             {% if user.is_authenticated %}<a href="{% url 'portfolio:editaCadeira' cadeira.id %}" class="btnEditar">Editar</a>{%endif%}
         </div>
         {%endfor%}
     </div>

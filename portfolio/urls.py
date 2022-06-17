@@ -55,22 +55,5 @@ urlpatterns = [
 ]
 
 #TODO
-
-# MVC -> Model–view–controller
-# Segurança: O controller funciona como uma espécie de filtro capaz de impedir que qualquer dado incorreto chegue até a camada modelo.
-# Organização: Esse método de programação permite que um novo desenvolvedor tenha muito mais facilidade em entender o que foi construído,
-# assim como os erros se tornam mais fácil de serem encontrados e corrigidos.
-# Eficiência: Como a arquitetura de software é dividida em 3 componentes , sua aplicação fica muito mais leve, permitindo que vários
-# desenvolvedores trabalhem no projeto de forma independente.
-# Tempo: Com a dinâmica facilitada pela colaboração entre os profissionais de desenvolvimento, o projeto pode ser concluído com muito mais rapidez, tornando o projeto escalável.
-# Transformação: As mudanças que forem necessárias também são mais fluidas, já que não será essencial trabalhar nas regras de negócio e correção de bugs.
-
-# comunicação assíncrona AJAX
-# AJAX -> AJAX significa Asynchronous JavaScript and XML
-# Simplificando, o AJAX torna o processo de multitarefas mais simples. Sempre que você encontrar uma situação em que duas
-# operações funcionam simultaneamente, uma em execução e a outra ociosa, é bem provável que o AJAX esteja envolvido.
-# AJAX não é uma única tecnologia, ou até mesmo uma linguagem de programação.
-
-# fundo home
-#DIAGRAMA
 # video
+
