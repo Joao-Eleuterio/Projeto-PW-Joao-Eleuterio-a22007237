@@ -5,11 +5,13 @@ Porjeto consiste num portfolio profissional com algumas funcionalidades como qui
 Após a avaliação de colegas e dos professores, estes decidiram que o projeto merecia 17 valores.
 
 
-Enunciados - https://github.com/ULHT-PW/pw-lab8
+Enunciados:
 
-           - https://github.com/ULHT-PW/pw-lab9
+Enunciado 1 - https://github.com/ULHT-PW/pw-lab8
+
+Enunciado 2 - https://github.com/ULHT-PW/pw-lab9
            
-           - https://github.com/ULHT-PW/pw-lab10
+Enunciado 3 - https://github.com/ULHT-PW/pw-lab10
            
-           - https://github.com/ULHT-PW/pw-lab11
+Enunciado 4 - https://github.com/ULHT-PW/pw-lab11
            
