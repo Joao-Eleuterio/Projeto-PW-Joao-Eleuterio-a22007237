@@ -1,17 +1,27 @@
-# Projeto-PW-Joao-Eleuterio-a22007237
+# Web Programming Portfolio Project
 
-Projeto realizado no âmbito da disciplina de Programação Web.
-Porjeto consiste num portfolio profissional com algumas funcionalidades como quiz,blog e api's..
-Após a avaliação de colegas e dos professores, estes decidiram que o projeto merecia 17 valores.
+Academic web application built as a professional portfolio with additional interactive functionality.
 
+## Features
 
-Enunciados:
+- personal portfolio pages
+- blog functionality
+- quiz functionality
+- external API integrations
+- server-side web application structure
+- deployment configuration
 
-Enunciado 1 - https://github.com/ULHT-PW/pw-lab8
+## Tech
 
-Enunciado 2 - https://github.com/ULHT-PW/pw-lab9
-           
-Enunciado 3 - https://github.com/ULHT-PW/pw-lab10
-           
-Enunciado 4 - https://github.com/ULHT-PW/pw-lab11
-           
+- Python
+- Web development
+- APIs
+- HTML / CSS
+- Pipenv
+- Procfile-based deployment
+
+## Background
+
+This was developed as a Web Programming project and is kept as a snapshot of earlier full-stack web development work.
+
+My current portfolio is maintained separately in the [Portfolio](https://github.com/Joao-Eleuterio/Portfolio) repository.
